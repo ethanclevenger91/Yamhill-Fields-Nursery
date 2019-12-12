@@ -398,7 +398,7 @@ header { min-height: 320px; }
     .desktop-nav { display: block; }
 	#dropdownButton { display: none; }
 	
-	.nav__nav-list { width: 650px; margin-left: auto; margin-right: 0; }
+	.nav__nav-list { width: 689px; margin-left: auto; margin-right: 0; }
 	.nav__nav-list { }
     .nav__nav-item { display: inline-block; padding: 15px 60px 15px 0; }
     .nav .nav__nav-link { font-size: 20px; }

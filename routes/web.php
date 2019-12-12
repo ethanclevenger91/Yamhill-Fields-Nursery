@@ -33,8 +33,8 @@ Route::get('/about-us', function(){
 	return view('about-us');
 });
 
-Route::get('/blog', function(){
-	return view('blog');
+Route::get('/our-blog', function(){
+	return view('our-blog');
 });
 
 Route::get('/plants', function(){

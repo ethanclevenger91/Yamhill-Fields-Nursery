@@ -5,7 +5,7 @@
             <li class="nav__nav-item"><a class="nav__nav-link" href="/index">Home</a>
             <li class="nav__nav-item"><a class="nav__nav-link" href="/plants">Plants</a>
             <li class="nav__nav-item"><a class="nav__nav-link" href="/supplies">Supplies</a>
-            <li class="nav__nav-item"><a class="nav__nav-link" href="/blog">Blog</a>
+            <li class="nav__nav-item"><a class="nav__nav-link" href="/our-blog">Blog</a>
             <li class="nav__nav-item"><a class="nav__nav-link" href="/about-us">About</a>
             <li class="nav__nav-item"><a class="nav__nav-link" href="/contact-us">Contact</a>
         </ul>
@@ -17,7 +17,7 @@
         <li class="nav__nav-item"><a class="nav__nav-link" href="/index">Home</a>
         <li class="nav__nav-item"><a class="nav__nav-link" href="/plants">Plants</a>
         <li class="nav__nav-item"><a class="nav__nav-link" href="/supplies">Supplies</a>
-        <li class="nav__nav-item"><a class="nav__nav-link" href="/blog">Blog</a>
+        <li class="nav__nav-item"><a class="nav__nav-link" href="/our-blog">Blog</a>
         <li class="nav__nav-item"><a class="nav__nav-link" href="/about-us">About</a>
         <li class="nav__nav-item"><a class="nav__nav-link" href="/contact-us">Contact</a>
     </ul>
