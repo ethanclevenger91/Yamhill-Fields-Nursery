@@ -41,8 +41,8 @@
             @include('includes.footer')
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(3, "mobileNav");
-                    setCurrentPage(3, "desktopNav");               
+                    setCurrentPage(4, "mobileNav");
+                    setCurrentPage(4, "desktopNav");               
                 });
             </script>
         </div>

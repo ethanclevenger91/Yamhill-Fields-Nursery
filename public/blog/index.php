@@ -14,7 +14,7 @@
 define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+require( dirname( __FILE__ ) . '/../blog/wp-blog-header.php' );
 
-header("Location: /resources/views/about");
-exit();
+//header("Location: /resources/views/about");
+//exit();

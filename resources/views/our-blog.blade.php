@@ -1,3 +1,11 @@
+<?php declare(strict_types=1);
+define('WP_USE_THEMES', false);
+require('/../blog/wp-blog-header.php');
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

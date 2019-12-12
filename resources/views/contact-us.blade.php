@@ -60,8 +60,8 @@
         </div>
 		            <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(4, "mobileNav");
-                    setCurrentPage(4, "desktopNav");               
+                    setCurrentPage(5, "mobileNav");
+                    setCurrentPage(5, "desktopNav");               
                 });
             </script>
 		<script type="text/javascript" src="/assets/javascript/contact-form-validation.js?mod=11182019"></script>
