@@ -33,6 +33,10 @@ Route::get('/about-us', function(){
 	return view('about-us');
 });
 
+Route::get('/blog', function(){
+	return view('blog');
+});
+
 Route::get('/plants', function(){
 	return view('plants');
 });
