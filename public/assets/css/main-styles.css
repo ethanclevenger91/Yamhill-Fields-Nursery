@@ -284,6 +284,15 @@ header { min-height: 300px; }
 .nursery-view__subheader { text-align: center; }
 
 
+/*Blog page*/
+.blog-post { padding-bottom: 50px; }
+.blog-post__title { font-size: 24px; color: #4f7942; }
+.blog__categories { text-transform: uppercase; color: #325b53; }
+.blog__date { font-weight: bold; color: #787878; }
+.blog__image { float: right; width: 45%; height: auto; padding-left: 10px; padding-bottom: 5px; }
+.blog__image img { display: block; width: 100%; height: auto; transition: 0.6s ease-in; }
+
+
 /*About Us page*/
 .about-one { background: url('../images/about/greenhouse-outside.jpg') 50% 50%/cover no-repeat; }
 
