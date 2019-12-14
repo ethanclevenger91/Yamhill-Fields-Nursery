@@ -1,9 +1,6 @@
 <?php
 declare(strict_types = 1);
-//define('WP_USE_THEMES', false);
-//require('./blog/wp-blog-header.php');
 ?>
-
 
 
 <!DOCTYPE html>
@@ -30,7 +27,7 @@ declare(strict_types = 1);
             <div class="content">
                 <div class="content-row">
                     <div class="col-sma-5">
-                        <h3>Our blog</h3>                 
+                        <h3>Our Blog</h3>                 
                         <div class="blog-posts" id="blogPosts">
                             <?php
                             global $post;
