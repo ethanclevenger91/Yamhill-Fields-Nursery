@@ -196,7 +196,7 @@ input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
 
 header { min-height: 300px; }
 .header__background { position: absolute; top: 0; width: 100%; min-height: 300px;
-                      background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 30%/cover no-repeat; }
+                      background: url('../images/greenhouse-with-variety-of-plants.jpg') 50% 20%/cover no-repeat; }
 
 .mobile-nav { display: block; }
 .desktop-nav { display: none; }
@@ -222,7 +222,7 @@ header { min-height: 300px; }
 
 .footer { position: relative; padding-top: 50px; padding-bottom: 50px; text-align: center; }
 .footer__background { position: absolute; top: 0; width: 100%; min-height: 411px; opacity: 0.2;
-                      background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 100%/cover no-repeat; }
+                      background: url('../images/plants-in-pots-inside-greenhouse.jpg') 50% 60%/cover no-repeat; }
 .footer__copyright { width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 40px; font-size: 18px; color: #000000; }
 .footer__location { width: 90%; padding-bottom: 40px; margin-left: auto; margin-right: auto; }
 .footer__location-header { padding-bottom: 15px; font-size: 20px; font-weight: bold; color: #4f7942; }
@@ -278,14 +278,14 @@ header { min-height: 300px; }
 /*Index page*/
 .index-content-image { width: 100%; min-height: 220px; }
 
-.index-content-image.one { background: url('../images/greenhouse-pots-on-sides-and-ground.jpg') 50% 50%/cover no-repeat; }
+.index-content-image.one { background: url('../images/greenhouse-pots-on-sides-and-ground.jpg') 50% 30%/cover no-repeat; }
 
 .blog__image a { display: block; overflow: hidden; }
 .blog__image img { display: block; width: 100%; height: auto; transition: 1.2s ease-in; } 
 .blog__image a:hover img { transform: scale(1.15); transition: 1.2s ease-in; }
 
 .subfooter-container { padding-bottom: 20px; }
-.page-index .subfooter-container__background { background: url('../images/plants-in-pots-inside-greenhouse.jpg') 50% 50%/cover no-repeat; }
+.page-index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
 .nursery-view__subheader { text-align: center; }
 
 
@@ -406,8 +406,8 @@ header { min-height: 300px; }
     .body-wrapper {  }
      .inner-wrapper { width: 1200px; }
 
-    header { min-height: 260px; }
-    .header__background { min-height: 260px; }
+    header { min-height: 380px; }
+    .header__background { min-height: 380px; }
 
     .mobile-nav { display: none; }
     .desktop-nav { display: block; }
