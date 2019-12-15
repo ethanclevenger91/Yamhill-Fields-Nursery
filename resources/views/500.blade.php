@@ -19,20 +19,22 @@
             @include('includes.logo')
             @include('includes.nav')
             <div class="content">
-                <div class="content-row">
-                    <div class="col-sma-5">
-                        <h3>500: Internal Server Error</h3>
+                <div class="inner-wrapper">
+                    <div class="content-row">
+                        <div class="col-sma-5">
+                            <h3>500: Internal Server Error</h3>
+                        </div>
+                        <div class="col-sma-7">
+                            <div class="content-background-container">
+                                <div class="content__content-image five00-one"></div>
+                            </div>
+                        </div>
                     </div>
-					<div class="col-sma-7">
-					    <div class="content-background-container">
-					        <div class="content__content-image five00-one"></div>
-						</div>
-					</div>
                 </div>
             </div>
             @include('includes.footer')
-			<script>
-                document.addEventListener("DOMContentLoaded", function () {              
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
                 });
             </script>
         </div>
