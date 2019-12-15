@@ -237,11 +237,11 @@ header { min-height: 300px; }
 
 
 
-.main-title-container { position: relative; top: 90px; left: 0px; width: 240px; 
+.main-title-container { position: relative; top: 90px; left: 0px; width: 242px; 
                         margin-left: auto; margin-right: auto; border: 2px solid rgba(79, 121, 66, 0.8);
                         text-align: center; background-color: rgba(240, 240, 240, 0.6); border-radius: 10px; transition: 0.4s ease-in; cursor: pointer; }
 .main-title-container:hover { border: 2px solid rgba(79, 121, 66, 0.95); background-color: rgba(79, 121, 66, 0.2); transition: 0.4s ease-in; }					
-.main-title-container__title { display: inline-block; width: 240px; padding: 8px 10px; font-size: 36px; font-family: 'Calibri', sans-serif; font-weight: bold; 
+.main-title-container__title { display: inline-block; width: 242px; padding: 8px 10px; font-size: 32px; font-family: 'Calibri', sans-serif; font-weight: bold; 
                                color: #4f7942; text-shadow: 0.8px 1px #090909; transition: 0.4s ease-in; }
 .main-title-container:hover .main-title-container__title { color: #71bc78; transition: 0.4s ease-in; }
 
