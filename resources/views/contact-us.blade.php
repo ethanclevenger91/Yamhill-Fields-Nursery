@@ -19,9 +19,7 @@
                     </div>
                 </div>
             </header>
-            @include('includes.logo')
             @include('includes.nav')
-
             <div class="content">    
                 <div class="inner-wrapper">
                     <div class="content-row">

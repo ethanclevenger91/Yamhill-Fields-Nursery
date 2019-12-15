@@ -18,7 +18,6 @@
                     </div>
                 </div>
             </header>
-            @include('includes.logo')
             @include('includes.nav')
             <div class="content">
                 <div class="inner-wrapper">
