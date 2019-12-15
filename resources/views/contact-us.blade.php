@@ -13,8 +13,10 @@
 
             <header>
                 @include('includes.header-components')
-                <div class="subtitle-container">
-                    <h2 class="subtitle-container__subtitle">Contact Us</h2>
+                <div class="inner-wrapper">
+                    <div class="subtitle-container">
+                        <h2 class="subtitle-container__subtitle">Contact Us</h2>
+                    </div>
                 </div>
             </header>
             @include('includes.logo')

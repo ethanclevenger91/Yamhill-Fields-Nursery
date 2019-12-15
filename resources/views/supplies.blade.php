@@ -12,13 +12,14 @@
         <div class="body-wrapper">
             <header>
                 @include('includes.header-components')
-                <div class="subtitle-container">
-                    <h2 class="subtitle-container__subtitle">Supplies</h2>
+                <div class="inner-wrapper">
+                    <div class="subtitle-container">
+                        <h2 class="subtitle-container__subtitle">Supplies</h2>
+                    </div>
                 </div>
             </header>
             @include('includes.logo')
             @include('includes.nav')
-
             <div class="content">
                 <div class="inner-wrapper">
                     <div class="content-row">

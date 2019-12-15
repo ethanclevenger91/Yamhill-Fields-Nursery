@@ -14,8 +14,10 @@
         <div class="body-wrapper">
             <header>
                 @include('includes.header-components')
-                <div class="subtitle-container">
-                    <h2 class="subtitle-container__subtitle">The Place to Buy Outdoor and Indoor Plants!</h2>
+                <div class="inner-wrapper">
+                    <div class="subtitle-container">
+                        <h2 class="subtitle-container__subtitle">The Place to Buy Outdoor and Indoor Plants!</h2>
+                    </div>
                 </div>
             </header>
             @include('includes.logo')
