@@ -11,8 +11,9 @@
     <body class="page-404">
         <div class="body-wrapper">
             <header>
-                @include('includes.header-components')
+                <div class="header__background"></div>
                 <div class="inner-wrapper">
+                    @include('includes.header-components')
                     <div class="subtitle-container">
                         <h2 class="subtitle-container__subtitle">404 Error</h2>
                     </div>

@@ -216,8 +216,9 @@ header { min-height: 300px; }
 #dropdownContent.show .nav__nav-item { height: 21px; margin-bottom: 20px; opacity: 1; transition: 0.8s all ease-in; }
 #dropdownContent.show .nav__nav-item:last-of-type { margin-bottom: 0; } 
 
-.logo { position: absolute; top: 5px; left: auto; right: 5px; width: 80px; height: 80px; }
-
+.logo { position: absolute; top: 5px; left: auto; right: 5px; width: 80px; height: 80px; border-radius: 12px; background-color: rgba(255, 255, 255, 0.8); }
+.logo__link { display: block; border-radius: 12px; cursor: pointer; }
+.logo__image { display: block; border-radius: 12px; }
 
 
 .footer { position: relative; padding-top: 50px; padding-bottom: 50px; text-align: center; }

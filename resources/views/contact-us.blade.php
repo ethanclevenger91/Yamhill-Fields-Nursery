@@ -10,10 +10,10 @@
     </head>
     <body class="page-contact-us">
         <div class="body-wrapper">
-
             <header>
-                @include('includes.header-components')
+                <div class="header__background"></div>
                 <div class="inner-wrapper">
+                    @include('includes.header-components')
                     <div class="subtitle-container">
                         <h2 class="subtitle-container__subtitle">Contact Us</h2>
                     </div>

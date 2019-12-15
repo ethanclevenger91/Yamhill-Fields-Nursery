@@ -11,8 +11,9 @@
     <body>
         <div class="body-wrapper">
             <header>
-                @include('includes.header-components')
-                <div class="inner-wrapper">
+                <div class="header__background"></div>
+                <div class="inner-wrapper">        
+                    @include('includes.header-components')
                     <div class="subtitle-container">
                         <h2 class="subtitle-container__subtitle">About Us</h2>
                     </div>
