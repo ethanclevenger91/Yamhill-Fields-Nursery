@@ -53,11 +53,9 @@
                             @endif		
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="subfooter-container">
-                <div class="inner-wrapper">
-                    <div class="subfooter-container__background content__content-image"></div>
+                    <div class="subfooter-container">
+                        <div class="subfooter-container__background content__content-image"></div>
+                    </div>
                 </div>
             </div>
             @include('includes.footer')

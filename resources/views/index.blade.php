@@ -85,13 +85,11 @@
                                 </div>
                             <?php endforeach; ?>
                         </div>
+                    </div>	
+                    <div class="subfooter-container">
+                        <div class="nursery-view__subheader"><h3>You could be here looking at plants!</h3></div>
+                        <div class="subfooter-container__background content__content-image"></div>
                     </div>
-                </div>
-            </div>		
-            <div class="subfooter-container">
-                <div class="inner-wrapper">
-                    <div class="nursery-view__subheader"><h3>You could be here looking at plants!</h3></div>
-                    <div class="subfooter-container__background content__content-image"></div>
                 </div>
             </div>
             @include('includes.footer')
