@@ -295,7 +295,7 @@ header { min-height: 300px; }
 .blog-post__title { font-size: 24px; color: #4f7942; }
 .blog__categories { text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #787878; }
-.blog__image { float: right; width: 50%; height: auto; padding-left: 15px; padding-bottom: 5px; }
+.blog__image { float: right; width: 36%; height: auto; padding-left: 15px; padding-bottom: 5px; }
 .blog__image img { display: block; }
 
 
