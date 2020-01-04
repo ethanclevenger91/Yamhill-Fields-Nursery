@@ -281,9 +281,9 @@ header { min-height: 300px; }
 
 .index-content-image.one { background: url('../images/plants-in-pots-inside-greenhouse.jpg') 50% 30%/cover no-repeat; }
 
-.blog__image a { display: block; overflow: hidden; }
-.blog__image img { display: block; width: 100%; height: auto; transition: 1.2s ease-in; } 
-.blog__image a:hover img { transform: scale(1.15); transition: 1.2s ease-in; }
+.blog__image a { display: block; overflow: hidden; width: 150px; }
+.blog__image img { display: block; transition: 0.8s ease-in; } 
+.blog__image a:hover img { transform: scale(1.15); transition: 0.8s ease-in; }
 
 .subfooter-container { padding-bottom: 20px; }
 .page-index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
@@ -296,7 +296,7 @@ header { min-height: 300px; }
 .blog__categories { text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #787878; }
 .blog__image { float: right; width: 50%; height: auto; padding-left: 15px; padding-bottom: 5px; }
-.blog__image img { display: block; width: 100%; height: auto; }
+.blog__image img { display: block; }
 
 
 /*About Us page*/
