@@ -13,7 +13,7 @@ declare(strict_types = 1);
         <title>Blog | Yamhill Fields Nursery</title>
         @include('includes.head')
     </head>
-    <body>
+    <body class="page-our-blog">
         <div class="body-wrapper">
             <header>
                 <div class="header__background"></div>
