@@ -12,5 +12,5 @@
 <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script> <!-- Vue.js router capabilities. -->
 
 
-<link rel="stylesheet" type="text/css" href="/assets/css/main-styles.css?mod=01032020" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main-styles.css?mod=01052020" />
 <link rel="stylesheet" type="text/css" href="/assets/css/print-styles.css?mod=08032019" />

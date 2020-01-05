@@ -296,7 +296,7 @@ header { min-height: 300px; }
 .blog-post__title { font-size: 24px; color: #4f7942; }
 .blog__categories { text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #787878; }
-.page-our-blog .blog__image { width: 36%; }
+.page-our-blog .blog__image { }
 .blog__image img { display: block; }
 
 

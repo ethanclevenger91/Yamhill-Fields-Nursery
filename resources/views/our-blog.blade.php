@@ -28,7 +28,7 @@ declare(strict_types = 1);
             <div class="content">
                 <div class="inner-wrapper">
                     <div class="content-row">
-                        <div class="col-sma-5">
+                        <div class="col-sma-12">
                             <h3>Our Blog</h3>                 
                             <div class="blog-posts" id="blogPosts">
                                 <?php
@@ -66,11 +66,6 @@ declare(strict_types = 1);
                                     </div>
                                 <?php endforeach; ?>
                             </div>               
-                        </div>
-                        <div class="col-sma-7">
-                            <div class="content-background-container">
-                                <div class="content__content-image about-one"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
