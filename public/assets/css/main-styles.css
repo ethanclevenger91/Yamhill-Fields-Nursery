@@ -297,7 +297,7 @@ header { min-height: 300px; }
 .blog__categories { text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #787878; }
 .page-our-blog .blog__image { }
-.blog__image img { display: block; }
+.blog__image img { display: block; width: 120px; height: 120px; }
 
 
 /*About Us page*/
@@ -391,6 +391,9 @@ header { min-height: 300px; }
     /*Supplies*/
     .supply.assorted-seeds { padding-bottom: 0; }
 
+    /*Blog*/
+    .blog__image img { display: block; width: auto; height: auto; }
+    
     /*Contact Us*/
     .form__transmit-results { font-size: 20px; }
 
