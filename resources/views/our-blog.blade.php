@@ -60,7 +60,7 @@ declare(strict_types = 1);
                                             ?>
                                         </div>
                                         <div class="blog__date"><?php the_date(); ?></div>
-                                        <?php if (has_post_thumbnail()) { ?><div class="blog__image"><?php the_post_thumbnail( 'thumbnail' ); ?></div><?php } ?>
+                                        <?php if (has_post_thumbnail()) { ?><div class="blog__image"><?php the_post_thumbnail( 'medium' ); ?></div><?php } ?>
                                         <div class="blog__content"><?php the_content(); ?></div>
                                         <div class="clear-both"></div>
                                     </div>
