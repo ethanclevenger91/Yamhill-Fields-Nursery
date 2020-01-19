@@ -25,6 +25,9 @@
             <div class="content">
                 <div class="inner-wrapper">
                     <div class="content-row">
+                        <div class="col-sma-7">
+                            <div class="index-content-image one"></div>		     
+                        </div>
                         <div class="col-sma-5">
                             <h3>The Best Nursery in Yamhill County</h3>
                             <p class="content__highlighted-phrase"><strong>Get all your gardening and landscaping plants and supplies in one stop!</strong></p>
@@ -32,9 +35,6 @@
                             <p>Gardening and Landscaping Tools.</p>
                             <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday. Questions: call us at 503-538-8204.</p>
                             <p>Located near Portland in the Willamette Valley in Dundee.</p>
-                        </div>
-                        <div class="col-sma-7">
-                            <div class="index-content-image one"></div>		     
                         </div>
                     </div>
                     <div class="content-row">
