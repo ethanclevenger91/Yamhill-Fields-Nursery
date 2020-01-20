@@ -282,8 +282,9 @@ header { min-height: 300px; }
 .index-content-image.one { background: url('../images/plants-in-pots-inside-greenhouse.jpg') 50% 30%/cover no-repeat; }
 
 .blog__image { float: right; height: auto; padding-left: 15px; padding-bottom: 5px; }
-.blog__image a { display: block; overflow: hidden; width: 150px; }
+.blog__image a { display: block; overflow: hidden; width: 150px; border-radius: 2px; transition: 0.5s ease-in; }
 .blog__image img { display: block; transition: 0.8s ease-in; } 
+.blog__image a:hover { box-shadow: 0 0 4px 6px #4f7942; transition: 0.5s ease-in; }
 .blog__image a:hover img { transform: scale(1.15); transition: 0.8s ease-in; }
 
 .subfooter-container { padding-bottom: 20px; }
