@@ -280,7 +280,7 @@ header { min-height: 300px; }
 .index-content-image { width: 100%; min-height: 220px; }
 
 
-.slideshow { position: static; width: 100%; max-width: 670px; height: 100%; margin-left: auto; margin-right: auto; background-color: #ffffff; }
+.slideshow { position: relative; width: 100%; max-width: 670px; height: 100%; margin-left: auto; margin-right: auto; background-color: #ffffff; }
 .slideshow__image { height: 150px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
 
 .slideshow__buttons { display: flex; flex-wrap: wrap; justify-content: center; border-radius: 0 0 15px 15px; cursor: pointer; }
@@ -293,8 +293,8 @@ header { min-height: 300px; }
 
 
 .slideshow__icon { width: 44px; height: 44px; border-radius: 5px; background-color: rgba( 255, 255, 255, 0.7); cursor: pointer }
-.slideshow__icon.left { position: absolute; top: 40%; left: 5%; }
-.slideshow__icon.right { position: absolute; top: 40%; left: 89%; }
+.slideshow__icon.left { position: absolute; top: 50px; left: 5%; }
+.slideshow__icon.right { position: absolute; top: 50px; right: 5%; }
 
 .slideshow__icon__link { display: block; font-size: 32px; color: #4f7942; text-align: center; }
 
@@ -406,6 +406,11 @@ header { min-height: 300px; }
     /*General use classes*/
     .content__highlighted-phrase { font-size: 18px; }
 
+    /*Index*/
+    .slideshow__image { height: 250px; }
+    .slideshow__icon.left { position: absolute; top: 103px; }
+    .slideshow__icon.right { position: absolute; top: 103px; }
+
     /*Plants*/
     .plant.potted-plants, .plant.grass { padding-bottom: 0; }
 
@@ -465,6 +470,9 @@ header { min-height: 300px; }
 
     /*Index page */
     .index-content-image { height: 400px; }
+    
+    .slideshow__icon.left { position: absolute; top: 40%; left: 5%; }
+    .slideshow__icon.right { position: absolute; top: 40%; right: 5%; }
     
     .slideshow { position: relative; width: 670px; height: 100%; margin-left: auto; margin-right: 0px; }
     .slideshow__image { position: relative; padding-bottom: 56.25%; }
