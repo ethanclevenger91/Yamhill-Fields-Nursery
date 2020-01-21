@@ -26,7 +26,30 @@
                 <div class="inner-wrapper">
                     <div class="content-row">
                         <div class="col-sma-7">
-                            <div class="index-content-image one"></div>		     
+                            <div class="slideshow">
+                                <div class="slideshow__image"></div>
+                                    <div class="slideshow__icon left">
+                                        <div class="slideshow__icon__link">&#10094;</div>
+                                    </div>
+                                    <div class="slideshow__icon right">
+                                        <div class="slideshow__icon__link">&#10095;</div>
+                                    </div>
+                                <div class="slideshow__buttons">
+                                    <div id="pausePlayButton" class="slideshow__slide-button"></div>
+                                    <div id="slideButton0" class="slideshow__slide-button">
+                                        <div class="slideshow__button-text"></div>
+                                    </div>
+                                    <div id="slideButton1" class="slideshow__slide-button">
+                                        <div class="slideshow__button-text"></div>
+                                    </div>
+                                    <div id="slideButton2" class="slideshow__slide-button">
+                                        <div class="slideshow__button-text"></div>
+                                    </div>
+                                    <div id="slideButton3" class="slideshow__slide-button">
+                                        <div class="slideshow__button-text"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sma-5">
                             <h3>The Best Nursery in Yamhill County</h3>
@@ -99,6 +122,7 @@
                     setCurrentPage(0, "desktopNav");
                 });
             </script>
+            <script src="/assets/javascript/index-slideshow.js"></script>
         </div>
     </body>
 </html>
