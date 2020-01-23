@@ -92,28 +92,28 @@ function runSlideShow() {
         
         if (currentSlideNumber === 0) {
             currentSlide.style.backgroundImage = "url(" + slide0.src + ")";
-            slideButton0.style.opacity = 1.0;
-            slideButton1.style.opacity = 0.40;
-            slideButton2.style.opacity = 0.40;
-            slideButton3.style.opacity = 0.40;
+            slideButton0.classList.add('currentSlideButton');
+            slideButton1.classList.remove('currentSlideButton');
+            slideButton2.classList.remove('currentSlideButton');
+            slideButton3.classList.remove('currentSlideButton');
         } else if (currentSlideNumber === 1) {
             currentSlide.style.backgroundImage = "url(" + slide1.src + ")";
-            slideButton0.style.opacity = 0.40;
-            slideButton1.style.opacity = 1.0;
-            slideButton2.style.opacity = 0.40;
-            slideButton3.style.opacity = 0.40;
+            slideButton0.classList.remove('currentSlideButton');
+            slideButton1.classList.add('currentSlideButton');
+            slideButton2.classList.remove('currentSlideButton');
+            slideButton3.classList.remove('currentSlideButton');
         } else if (currentSlideNumber === 2) {
             currentSlide.style.backgroundImage = "url(" + slide2.src + ")";
-            slideButton0.style.opacity = 0.40;
-            slideButton1.style.opacity = 0.40;
-            slideButton2.style.opacity = 1.0;
-            slideButton3.style.opacity = 0.40;
+            slideButton0.classList.remove('currentSlideButton');
+            slideButton1.classList.remove('currentSlideButton');
+            slideButton2.classList.add('currentSlideButton');
+            slideButton3.classList.remove('currentSlideButton');
         } else if (currentSlideNumber === 3) {
             currentSlide.style.backgroundImage = "url(" + slide3.src + ")";
-            slideButton0.style.opacity = 0.40;
-            slideButton1.style.opacity = 0.40;
-            slideButton2.style.opacity = 0.40;
-            slideButton3.style.opacity = 1.0;
+            slideButton0.classList.remove('currentSlideButton');
+            slideButton1.classList.remove('currentSlideButton');
+            slideButton2.classList.remove('currentSlideButton');
+            slideButton3.classList.add('currentSlideButton');
         }
         slideshowCounter++;
     }
