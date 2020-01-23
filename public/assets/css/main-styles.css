@@ -280,12 +280,12 @@ header { min-height: 300px; }
 .index-content-image { width: 100%; min-height: 220px; }
 
 
-.slideshow { position: relative; width: 100%; max-width: 670px; height: 100%; margin-left: auto; margin-right: auto; background-color: #ffffff; }
+.slideshow { position: relative; width: 100%; max-width: 670px; height: 100%; padding-bottom: 20px; margin-left: auto; margin-right: auto; background-color: #ffffff; }
 .slideshow__image { height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
 
 .slideshow__buttons { display: flex; flex-wrap: wrap; justify-content: center; border-radius: 0 0 15px 15px; cursor: pointer; }
 .slideshow__slide-button { display: block; float: left; opacity: 0.4; width: 20px; height: 20px; margin-top: 10px; margin-left: 14px; background-color: #4f7942;
-                border-radius: 10px; cursor: pointer; transition: 0.2s; }
+                border-radius: 4px; cursor: pointer; transition: 0.2s; }
 .slideshow__slide-button:hover { opacity: 0.65; transition: 0.2s; }
 .slideshow__button-text { }
 #pausePlayButton { opacity: 1; margin-left: 0; border-radius: 2px; background: url(../images/pause-button.png); }
@@ -408,6 +408,7 @@ header { min-height: 300px; }
     .content__highlighted-phrase { font-size: 18px; }
 
     /*Index*/
+    .slideshow { padding-bottom: 0; }
     .slideshow__image { height: 260px; }
     .slideshow__icon { width: 32px; height: 32px; }
     .slideshow__icon.left { position: absolute; top: 114px; }
