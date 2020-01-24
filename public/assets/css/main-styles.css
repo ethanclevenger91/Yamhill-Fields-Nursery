@@ -191,7 +191,7 @@ h3 { font-size: 20px; padding: 0 0 10px 0; color: #77874a; }
 a, a:link, a:visited { color: #4f7942; }
 a:hover { }
 
-input:focus, textarea:focus { box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s;}
+input:focus, textarea:focus { box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
 input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
 
 header { min-height: 300px; }
@@ -299,7 +299,7 @@ header { min-height: 300px; }
 .slideshow__icon__link { display: block; font-size: 20px; color: #4f7942; text-align: center; }
  
 .currentSlideButton { opacity: 1; }
-.slideshow__slide-button.currentSlideButton:hover { opacity: 1};
+.slideshow__slide-button.currentSlideButton:hover { opacity: 1; }
 
 
 .blog__image { float: right; height: auto; padding-left: 15px; padding-bottom: 5px; }
@@ -319,7 +319,7 @@ header { min-height: 300px; }
 .blog__categories { text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #787878; }
 .page-our-blog .blog__image { }
-.blog__image img { display: block; width: 120px; height: 120px; }
+.blog__image img { display: block; width: 150px; height: 150px; }
 
 
 /*About Us page*/
