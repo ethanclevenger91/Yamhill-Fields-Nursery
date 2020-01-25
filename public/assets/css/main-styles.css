@@ -291,8 +291,8 @@ header { min-height: 300px; }
 #pausePlayButton { opacity: 1; margin-left: 0; border-radius: 2px; background: url(../images/pause-button.png); }
 #slideButton3 { margin-bottom: 10px; }
 
-.slideshow__icon { width: 28px; height: 28px; border-radius: 5px; background-color: rgba( 255, 255, 255, 0.8); cursor: pointer; transition: 0.2s;  }
-.slideshow__icon:hover { background-color: rgba( 255, 255, 255, 0.95); transition: 0.2s; }
+.slideshow__icon { width: 28px; height: 28px; border-radius: 5px; background-color: rgba( 255, 255, 255, 0.92); cursor: pointer; transition: 0.2s;  }
+.slideshow__icon:hover { background-color: rgba( 205, 205, 205, 0.95); transition: 0.2s; }
 .slideshow__icon.left { position: absolute; top: 96px; left: 3%; }
 .slideshow__icon.right { position: absolute; top: 96px; right: 3%; }
 
