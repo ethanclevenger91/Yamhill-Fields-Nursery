@@ -301,10 +301,14 @@ header { min-height: 300px; }
 .currentSlideButton { opacity: 1; }
 .slideshow__slide-button.currentSlideButton:hover { opacity: 1; }
 
-
+.blog-post { padding-bottom: 25px; }
+.blog-post__title { display: block; padding-bottom: 2px; font-size: 20px; color: #4f7942; }
+.blog-post__title__link { font-size: inherit; color: inherit; }
+.blog__categories { padding-bottom: 2px; text-transform: uppercase; color: #325b53; }
+.blog__date { padding-bottom: 8px; font-weight: bold; color: #787878; }
 .blog__image { float: right; height: auto; padding-left: 15px; padding-bottom: 5px; }
 .blog__image a { display: block; overflow: hidden; width: 150px; border-radius: 2px; transition: 0.5s ease-in; }
-.blog__image img { display: block; transition: 0.8s ease-in; } 
+.blog__image img { display: block; width: 150px; height: 150px; transition: 0.8s ease-in; } 
 .blog__image a:hover { box-shadow: 0 0 4px 6px #4f7942; transition: 0.5s ease-in; }
 .blog__image a:hover img { transform: scale(1.15); transition: 0.8s ease-in; }
 
@@ -314,12 +318,9 @@ header { min-height: 300px; }
 
 
 /*Blog page*/
-.blog-post { padding-bottom: 50px; }
-.blog-post__title { font-size: 24px; color: #4f7942; }
-.blog__categories { text-transform: uppercase; color: #325b53; }
-.blog__date { padding-bottom: 10px; font-weight: bold; color: #787878; }
-.page-our-blog .blog__image { }
-.blog__image img { display: block; width: 150px; height: 150px; }
+.page-our-blog .blog-post { padding-bottom: 40px; }
+.page-our-blog .blog__date { padding-bottom: 10px; }
+.page-our-blog .blog__image img { display: block; }
 
 
 /*About Us page*/
@@ -485,8 +486,10 @@ header { min-height: 300px; }
     .slideshow { position: relative; width: 670px; height: 100%; margin-left: auto; margin-right: 0px; }
     .slideshow__image { position: relative; padding-bottom: 56.25%; }
 
+    .blog-post { padding-bottom: 0px; }
+    .blog-post__title { font-size: 24px; }
 
-
+    
     /*Plants page*/
     .plant { }
     .plant__title { font-size: 24px; }
@@ -502,6 +505,10 @@ header { min-height: 300px; }
     .supply__price { font-size: 19px; }
 
     .supply.clay-plastic-pots, .supply.assorted-seeds { padding-bottom: 0; }
+    
+    
+    /*Blog*/
+    .page-our-blog .blog-post { padding-bottom: 50px; }
 
 }
 
