@@ -37,7 +37,7 @@ declare(strict_types = 1);
                                 $postsToDisplay = get_posts($args);
                                 foreach ($postsToDisplay as $post) : setup_postdata($post);
                                     ?>                                                       
-                                    <div class="blog-post">
+                                    <div class="blog-post" id="<?php the_title(); ?>">
                                         <h4 class="blog-post__title"><?php the_title(); ?></h4>
                                         <div class="blog__categories"><?php
                                             $categories = get_the_category();

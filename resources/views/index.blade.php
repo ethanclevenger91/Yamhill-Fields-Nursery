@@ -79,7 +79,7 @@
                                 ?>      
                                 <div class="col-sma-4">
                                     <div class="blog-post">
-                                        <h4 class="blog-post__title"><a href="/our-blog" class="blog-post__title__link"><?php the_title(); ?></a></h4>
+                                        <h4 class="blog-post__title"><a href="/our-blog#<?php the_title(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h4>
                                         <div class="blog__categories"><?php
                                             $categories = get_the_category();
                                             $h = 0;
@@ -101,7 +101,7 @@
                                             ?>
                                         </div>
                                         <div class="blog__date"><?php the_date(); ?></div>
-                                        <div class="blog__image"><a href="/our-blog"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
+                                        <div class="blog__image"><a href="/our-blog#<?php the_title(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
                                         <div class="blog__content"><?php the_excerpt(); ?></div>
                                         <div class="clear-both"></div>
                                     </div>
