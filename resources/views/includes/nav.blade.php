@@ -12,8 +12,6 @@
         </ul>
     </div>
 </nav>
-
-
 <nav class="nav desktop-nav" id="desktopNav">
     <div class="inner-wrapper">
         <ul class="nav__nav-list">
