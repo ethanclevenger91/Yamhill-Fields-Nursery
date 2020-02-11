@@ -28,12 +28,12 @@
                         <div class="col-sma-7">
                             <div class="slideshow">
                                 <div class="slideshow__image"></div>
-                                    <div class="slideshow__icon left">
-                                        <div class="slideshow__icon__link">&#10094;</div>
-                                    </div>
-                                    <div class="slideshow__icon right">
-                                        <div class="slideshow__icon__link">&#10095;</div>
-                                    </div>
+                                <div class="slideshow__icon left">
+                                    <div class="slideshow__icon__link">&#10094;</div>
+                                </div>
+                                <div class="slideshow__icon right">
+                                    <div class="slideshow__icon__link">&#10095;</div>
+                                </div>
                                 <div class="slideshow__buttons">
                                     <div id="pausePlayButton" class="slideshow__slide-button"></div>
                                     <div id="slideButton0" class="slideshow__slide-button">
@@ -70,44 +70,42 @@
                         <div class="col-sma-1">&nbsp;</div>
                     </div>	
                     <div class="content-row">
-                        <div class="col-sma-12">
-                            <?php
-                            global $post;
-                            $args = array('posts_per_page' => 3);
-                            $postsToDisplay = get_posts($args);
-                            foreach ($postsToDisplay as $post) : setup_postdata($post);
-                                ?>      
-                                <div class="col-sma-4">
-                                    <div class="blog-post">
-                                        <h4 class="blog-post__title"><a href="/our-blog#<?php the_title(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h4>
-                                        <div class="blog__categories"><?php
-                                            $categories = get_the_category();
-                                            $h = 0;
-                                            foreach ($categories as $category) {
-                                                $h++;
+                        <?php
+                        global $post;
+                        $args = array('posts_per_page' => 3);
+                        $postsToDisplay = get_posts($args);
+                        foreach ($postsToDisplay as $post) : setup_postdata($post);
+                            ?>      
+                            <div class="col-sma-4">
+                                <div class="blog-post">
+                                    <h4 class="blog-post__title"><a href="/our-blog#<?php the_title(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h4>
+                                    <div class="blog__categories"><?php
+                                        $categories = get_the_category();
+                                        $h = 0;
+                                        foreach ($categories as $category) {
+                                            $h++;
+                                        }
+                                        $h = $h - 1;
+                                        $i = 0;
+                                        foreach ($categories as $category) {
+                                            $result = "";
+                                            if ($i < $h) {
+                                                $result .= $category->name . ", ";
+                                            } else {
+                                                $result .= $category->name;
                                             }
-                                            $h = $h - 1;
-                                            $i = 0;
-                                            foreach ($categories as $category) {
-                                                $result = "";
-                                                if ($i < $h) {
-                                                    $result .= $category->name . ", ";
-                                                } else {
-                                                    $result .= $category->name;
-                                                }
-                                                echo $result;
-                                                $i++;
-                                            }
-                                            ?>
-                                        </div>
-                                        <div class="blog__date"><?php the_date(); ?></div>
-                                        <div class="blog__image"><a href="/our-blog#<?php the_title(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
-                                        <div class="blog__content"><?php the_excerpt(); ?></div>
-                                        <div class="clear-both"></div>
+                                            echo $result;
+                                            $i++;
+                                        }
+                                        ?>
                                     </div>
+                                    <div class="blog__date"><?php the_date(); ?></div>
+                                    <div class="blog__image"><a href="/our-blog#<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a> <div class="clear-both"></div></div>
+                                    <div class="blog__content"><?php the_excerpt(); ?></div>
+                                    <div class="clear-both"></div>
                                 </div>
-                            <?php endforeach; ?>
-                        </div>
+                            </div>
+                        <?php endforeach; ?>
                     </div>	
                     <div class="subfooter-container">
                         <div class="nursery-view__subheader"><h3>You could be here looking at plants!</h3></div>
