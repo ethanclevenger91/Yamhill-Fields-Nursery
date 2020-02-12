@@ -8,10 +8,12 @@
  * Author URI: https://www.tualatintopbakery.com
  */
 
+add_action( 'admin_enqueue_scripts', function(){ 
+    wp_enqueue_style( 'general-testimonials-admin-styling', plugin_dir_url(__FILE__) . '/assets/css/general-testimonials-admin-styles.css' ); 
+});
 
 add_action( 'wp_enqueue_scripts', function(){ 
-   wp_enqueue_style( 'general-testimonials-styling', plugin_dir_url(__FILE__) . '/assets/css/general-testimonials-styles.css' ); 
-   wp_enqueue_style( 'general-testimonials-styling', plugin_dir_url(__FILE__) . 'style.css' );
+    wp_enqueue_style( 'general-testimonials-styling', plugin_dir_url(__FILE__) . '/assets/css/general-testimonials-styles.css' ); 
 });
 
 function create_testimonial_post_type() {
@@ -28,6 +30,38 @@ function create_testimonial_post_type() {
     );
 }
 add_action('init', 'create_testimonial_post_type');
+
+
+/*Add a settings page for the plugin*/
+
+
+/*Set up the settings page inputs*/
+function general_testimonials_register_settings() {
+    add_option( 'general-testimonials-leading-text', 'Some text' );
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-leading-text', '' );
+}
+add_action( 'admin_init', 'general_testimonials_register_settings');
+
+
+/*Set up the settings page*/
+function general_testimonials_add_options_page() {
+    add_options_page( 'Page Title', 'General Testimonials Settings', 'manage_options', 'general-testimonials', 'general_testimonials_generate_settings_page' );
+}
+add_action( 'admin_menu', 'general_testimonials_add_options_page');
+
+
+function general_testimonials_generate_settings_page() {
+    ?>
+    <h2>General Testimonials Settings</h2>
+    <?php screen_icon(); ?>
+        <form class="testimonials-settings-form" method="post" action="options.php">
+        <?php settings_fields('general-testimonials-settings-group'); ?>
+            <label for="general-testimonials-leading-text">Testimonials Leading Text</label>
+            <input id="generalTestimonialsLeadingText" class="general-testimonials-leading-text" name="general-testimonials-leading-text" type="text" value="<?php echo get_option('general-testimonials-leading-text'); ?>" />
+        <?php submit_button(); ?>
+        </form>
+    <?php
+}
 
 
 function add_custom_metabox_info() {
@@ -141,7 +175,7 @@ function load_testimonials($a) {
     $posts = get_posts($args);
    
     echo '<div class="testimonials-container">';
-    echo '<h3 class="testimonials-container__heading">Customers Love Us!</h3>';
+    echo '<h3 class="testimonials-container__heading">' . get_option( 'general-testimonials-leading-text' ) . '</h3>';
     echo '<div class="testimonials-container__inner-wrapper">';
     foreach ($posts as $post) {
         $url_thumb = wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID));
@@ -170,7 +204,7 @@ function load_testimonials($a) {
     }
     echo '</div>';
     echo '</div>';
-
+    
 }
 add_shortcode( "general_testimonials", "load_testimonials" );
 add_filter( 'widget_text', 'do_shortcode' );
