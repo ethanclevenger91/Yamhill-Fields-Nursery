@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Your friendly Portland area landscaping and gardening store is here for business." />
         <meta name="keywords" content="nursery, Portland, Willamette Valley, Oregon, plants, grass, shrubs, trees, garden, gardening, landscaping" />
-
         <title>Yamhill Fields Nursery</title>
+        <?php wp_head(); ?><!-- Allow WordPress plugins to use CSS and JavaScript. -->
         <link rel="stylesheet" type="text/css" href="/assets/css/main-styles.css" />
         @include('includes.head')
     </head>
@@ -63,9 +63,9 @@
                     <div class="content-row">
                         <div class="col-sma-1">&nbsp;</div>
                         <div class="col-sma-10">
-                            <h3>Serving Gardners and Landscapers Since 1982</h3>
+                            <h3>Serving Gardeners and Landscapers Since 1982</h3>
                             <p>We've had the honor of selling plants and landscaping and gardening supplies to our customers for many years.
-                                Drop and by and see why garderners and landscapers make us their go-to garden and landscaping store!</p>
+                                Drop and by and see why gardeners and landscapers make us their go-to garden and landscaping store!</p>
                         </div>
                         <div class="col-sma-1">&nbsp;</div>
                     </div>	
@@ -109,6 +109,14 @@
                     </div>	
                     <div class="content-row">
                         <div class="col-sma-12">
+                            <?php
+                            $content = "" . do_shortcode('[general_testimonials]');
+                            echo $content;
+                            ?>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="col-sma-12">
                             <div class="subfooter-container">
                                 <div class="nursery-view__subheader"><h3>You could be here looking at plants!</h3></div>
                                 <div class="subfooter-container__background content__content-image"></div>
@@ -126,5 +134,6 @@
             </script>
             <script src="/assets/javascript/index-slideshow.js"></script>
         </div>
+        <?php wp_footer(); ?><!-- Allow WordPress plugins to use CSS and JavaScript. -->
     </body>
 </html>
