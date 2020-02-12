@@ -183,10 +183,11 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 }
 
 body { }
-h1, h2, h3 { font-weight: bold; }
+h1, h2, h3, h4 { font-weight: bold; }
 h1 { }
 h2 { font-size: 22px; color: #325b53; }
 h3 { font-size: 20px; padding: 0 0 10px 0; color: #77874a; }
+h4 { padding: 0 0 10px 0; color: #4f7942; }
 
 a, a:link, a:visited { color: #4f7942; }
 a:hover { }
@@ -272,6 +273,13 @@ header { min-height: 300px; }
 
 /*Shared styles*/
 
+
+
+/*Customized plugin styles*/
+/*For testimonials*/
+.testimonial__provided-name { color: #77874a; }
+.testimonial__link { color: #77874a; }
+.testimonial__label { color: #787878; }
 
 
 /*Index page*/
