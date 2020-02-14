@@ -7,7 +7,6 @@
         <meta name="keywords" content="nursery, Portland, Willamette Valley, Oregon, plants, grass, shrubs, trees, garden, gardening, landscaping" />
         <title>Yamhill Fields Nursery</title>
         <?php wp_head(); ?><!-- Allow WordPress plugins to use CSS and JavaScript. -->
-        <link rel="stylesheet" type="text/css" href="/assets/css/main-styles.css" />
         @include('includes.head')
     </head>
     <body class="page-index">
