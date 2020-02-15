@@ -195,8 +195,8 @@ a:hover { }
 input:focus, textarea:focus { box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
 input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
 
-header { min-height: 280px; }
-.header__background { position: absolute; top: 0; width: 100%; min-height: 280px;
+header { min-height: 270px; }
+.header__background { position: absolute; top: 0; width: 100%; min-height: 270px;
                       background: url('../images/greenhouse-pots-on-sides-and-ground.jpg') 50% 58%/cover no-repeat; }
 
 .mobile-nav { display: block; }
@@ -237,16 +237,16 @@ header { min-height: 280px; }
 .footer .footer__social-item .footer__social-link:hover { color: #77874a; transition: 0.4s ease-in; }
 
 
-.main-title-container { position: relative; top: 75px; left: 0px; width: 242px; 
+.main-title-container { position: relative; top: 70px; left: 0px; width: 230px; 
                         margin-left: auto; margin-right: auto; border: 4px solid rgba(79, 121, 66, 0.8); text-align: center; 
                         background: linear-gradient(170deg, rgba(252, 252, 252, 0.8) 0%, rgba(252, 252, 252, 0.8) 60%, rgba(252, 252, 252, 0.7) 70%, rgba(252, 252, 252, 0.6) 80%, rgba(252, 252, 252, 0.2) 100%);
                         background-size: 1040px; background-position: 0 0; border-radius: 10px; transition: 0.4s ease-in; cursor: pointer; }
 .main-title-container:hover { border: 4px solid rgba(79, 121, 66, 0.75); transition: 0.4s ease-in; background-position: -520px 0; }					
-.main-title-container__title { display: inline-block; width: 242px; padding: 8px 10px; font-size: 32px; font-family: 'Calibri', sans-serif; font-weight: bold; 
+.main-title-container__title { display: inline-block; padding: 8px 10px; font-size: 32px; font-family: 'Calibri', sans-serif; font-weight: bold; 
                                color: #4f7942; text-shadow: 0.8px 1px #090909; }
 
 
-.subtitle-container { position: relative; top: 85px; width: 100%; max-width: 270px; padding: 7px 8px;
+.subtitle-container { position: relative; top: 80px; width: 100%; max-width: 270px; padding: 6px 8px;
                       margin-left: auto; margin-right: auto; border: 4px solid rgba(79, 121, 66, 0.8);
                       border-radius: 10px; text-align: center; background-color: rgba(252, 252, 252, 0.8); }
 .subtitle-container__subtitle { font-family: 'Cabin', sans-serif; text-shadow: 0.8px 1px #f9f9f9; }
@@ -471,8 +471,8 @@ header { min-height: 280px; }
     .footer__location-header { font-size: 24px; }
 
 
-    .main-title-container { top: 80px; left: 70px; width: 520px; margin-left: 0; margin-right: 0; }
-    .main-title-container__title { position: relative; width: 520px; padding: 12px 10px; font-size: 48px; line-height: 50px; }
+    .main-title-container { top: 80px; left: 70px; width: 500px; margin-left: 0; margin-right: 0; }
+    .main-title-container__title { position: relative; padding: 12px 10px; font-size: 48px; line-height: 50px; }
 
     .subtitle-container { display: inline-block; top: 100px; left: 70px; width: auto; max-width: none; }
 
