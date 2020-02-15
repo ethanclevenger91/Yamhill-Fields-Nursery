@@ -195,13 +195,13 @@ a:hover { }
 input:focus, textarea:focus { box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
 input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
 
-header { min-height: 300px; }
-.header__background { position: absolute; top: 0; width: 100%; min-height: 300px;
+header { min-height: 280px; }
+.header__background { position: absolute; top: 0; width: 100%; min-height: 280px;
                       background: url('../images/greenhouse-pots-on-sides-and-ground.jpg') 50% 58%/cover no-repeat; }
 
 .mobile-nav { display: block; }
 .desktop-nav { display: none; }
-#dropdownButton { position: absolute; top: 25px; left: 20px; width: 30px; height: 30px; 
+#dropdownButton { position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; 
                   background: url('../images/hamburger-nav.png') 50% 0%/cover no-repeat; cursor: pointer; }
 .nav { background-color: #71bc78; }
 .nav__nav-list { }
@@ -217,7 +217,7 @@ header { min-height: 300px; }
 #dropdownContent.show .nav__nav-item { height: 21px; margin-bottom: 20px; opacity: 1; transition: 0.8s all ease-in; }
 #dropdownContent.show .nav__nav-item:last-of-type { margin-bottom: 0; } 
 
-.logo { position: absolute; top: 5px; left: auto; right: 5px; width: 80px; height: 80px; border-radius: 12px; background-color: rgba(255, 255, 255, 0.8); }
+.logo { position: absolute; top: 10px; left: auto; right: 10px; width: 50px; height: 50px; border-radius: 12px; background-color: rgba(255, 255, 255, 0.8); }
 .logo__link { display: block; border-radius: 12px; cursor: pointer; }
 .logo__image { display: block; border-radius: 12px; }
 
@@ -237,7 +237,7 @@ header { min-height: 300px; }
 .footer .footer__social-item .footer__social-link:hover { color: #77874a; transition: 0.4s ease-in; }
 
 
-.main-title-container { position: relative; top: 90px; left: 0px; width: 242px; 
+.main-title-container { position: relative; top: 75px; left: 0px; width: 242px; 
                         margin-left: auto; margin-right: auto; border: 4px solid rgba(79, 121, 66, 0.8); text-align: center; 
                         background: linear-gradient(170deg, rgba(252, 252, 252, 0.8) 0%, rgba(252, 252, 252, 0.8) 60%, rgba(252, 252, 252, 0.7) 70%, rgba(252, 252, 252, 0.6) 80%, rgba(252, 252, 252, 0.2) 100%);
                         background-size: 1040px; background-position: 0 0; border-radius: 10px; transition: 0.4s ease-in; cursor: pointer; }
@@ -246,7 +246,7 @@ header { min-height: 300px; }
                                color: #4f7942; text-shadow: 0.8px 1px #090909; }
 
 
-.subtitle-container { position: relative; top: 100px; width: 100%; max-width: 270px; padding: 7px 8px;
+.subtitle-container { position: relative; top: 85px; width: 100%; max-width: 270px; padding: 7px 8px;
                       margin-left: auto; margin-right: auto; border: 4px solid rgba(79, 121, 66, 0.8);
                       border-radius: 10px; text-align: center; background-color: rgba(252, 252, 252, 0.8); }
 .subtitle-container__subtitle { font-family: 'Cabin', sans-serif; text-shadow: 0.8px 1px #f9f9f9; }
@@ -409,6 +409,8 @@ header { min-height: 300px; }
     header { min-height: 320px; }
     .header__background { min-height: 320px; }
 
+    .logo { width: 80px; height: 80px; }
+    
     .footer__background { min-height: 365px; }
 
     /*General use classes*/
