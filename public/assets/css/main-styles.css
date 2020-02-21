@@ -277,9 +277,9 @@ header { min-height: 270px; }
 
 /*Customized plugin styles*/
 /*For testimonials*/
-.testimonial__provided-name { color: #77874a; }
-.testimonial__link { color: #77874a; }
-.testimonial__label { color: #787878; }
+.testimonial__provided-name { color: #4f7942; }
+.testimonial__link { color: #4f7942; }
+.testimonial__label { color: #707070; }
 
 
 /*Index page*/
@@ -311,7 +311,7 @@ header { min-height: 270px; }
 .blog-post__title { display: block; padding-bottom: 2px; font-size: 20px; color: #4f7942; }
 .blog-post__title__link { font-size: inherit; color: inherit; }
 .blog__categories { padding-bottom: 2px; text-transform: uppercase; color: #325b53; }
-.blog__date { padding-bottom: 8px; font-weight: bold; color: #787878; }
+.blog__date { padding-bottom: 8px; font-weight: bold; color: #707070; }
 .blog__image { float: right; height: auto; padding-left: 15px; padding-bottom: 5px; }
 .blog__image a { display: block; overflow: hidden; width: 150px; border-radius: 2px; transition: 0.5s ease-in; }
 .blog__image img { display: block; width: 150px; height: 150px; transition: 0.8s ease-in; } 
