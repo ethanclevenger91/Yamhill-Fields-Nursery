@@ -35,6 +35,8 @@ slideButton3.addEventListener('click', function () {
 let backIcon = document.getElementsByClassName("slideshow__icon")[0];
 let forwardIcon = document.getElementsByClassName("slideshow__icon")[1];
 
+let currentSlideImageLink = document.getElementsByClassName("slideshow__image__link")[0];
+
 backIcon.addEventListener('click', function () {
    setSlide(currentSlideNumber - 1);
 }, false);
@@ -96,24 +98,32 @@ function runSlideShow() {
             slideButton1.classList.remove('currentSlideButton');
             slideButton2.classList.remove('currentSlideButton');
             slideButton3.classList.remove('currentSlideButton');
+            currentSlideImageLink.href = "/about-us";
+            currentSlideImageLink.setAttribute("aria-label", "About Us");
         } else if (currentSlideNumber === 1) {
             currentSlide.style.backgroundImage = "url(" + slide1.src + ")";
             slideButton0.classList.remove('currentSlideButton');
             slideButton1.classList.add('currentSlideButton');
             slideButton2.classList.remove('currentSlideButton');
             slideButton3.classList.remove('currentSlideButton');
+            currentSlideImageLink.href = "/plants";
+            currentSlideImageLink.setAttribute("aria-label", "Plants");
         } else if (currentSlideNumber === 2) {
             currentSlide.style.backgroundImage = "url(" + slide2.src + ")";
             slideButton0.classList.remove('currentSlideButton');
             slideButton1.classList.remove('currentSlideButton');
             slideButton2.classList.add('currentSlideButton');
             slideButton3.classList.remove('currentSlideButton');
+            currentSlideImageLink.href = "/plants";
+            currentSlideImageLink.setAttribute("aria-label", "Plants");
         } else if (currentSlideNumber === 3) {
             currentSlide.style.backgroundImage = "url(" + slide3.src + ")";
             slideButton0.classList.remove('currentSlideButton');
             slideButton1.classList.remove('currentSlideButton');
             slideButton2.classList.remove('currentSlideButton');
             slideButton3.classList.add('currentSlideButton');
+            currentSlideImageLink.href = "/supplies";
+            currentSlideImageLink.setAttribute("aria-label", "Supplies");
         }
         slideshowCounter++;
     }
