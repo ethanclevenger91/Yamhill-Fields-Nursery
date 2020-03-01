@@ -8,29 +8,16 @@
  * Author URI: https://www.tualatintopbakery.com
  */
 
-$baseTestimonialImageBorderRadius = "45px";
+
 
 add_action( 'admin_enqueue_scripts', function(){ 
     wp_enqueue_style( 'general-testimonials-admin-styling', plugin_dir_url(__FILE__) . '/assets/css/general-testimonials-admin-styles.css' ); 
 });
 
 add_action( 'wp_enqueue_scripts', function(){ 
-  wp_enqueue_style( 'general-testimonials-styling', plugin_dir_url(__FILE__) . '/assets/css/general-testimonials-styles.css' ); 
+  wp_enqueue_style( 'general-testimonials-styling', plugin_dir_url(__FILE__) . '/assets/css/general-testimonials-styles.php' ); 
 });
 
-?>
-<style>
-    
-.testimonial__image { border-radius: <?php  
-if( get_option( 'general-testimonials-border-radius' ) !== "" ){
-    echo get_option( 'general-testimonials-border-radius' );
-    } else {
-        echo $baseTestimonialImageBorderRadius;
-    } 
-    ?>; }
-
-</style>
-<?php
 
 function gt_create_testimonial_post_type() {
     register_post_type('general-testimonials',
@@ -50,11 +37,10 @@ add_action('init', 'gt_create_testimonial_post_type');
 
 /*Add a settings page for the plugin*/
 
-
 /*Set up the settings page inputs*/
 function gt_register_settings() {
     add_option( 'general-testimonials-leading-text', 'Some text' );
-    add_option( 'general-testimonials-border-radius', $baseTestimonialImageBorderRadius );
+    add_option( 'general-testimonials-border-radius', "45" );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-leading-text', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-border-radius', 'gt_validatetextfield' );
 }
@@ -80,12 +66,12 @@ function gt_generate_settings_page() {
     <form class="testimonials-settings-form" method="post" action="options.php">
         <?php settings_fields( 'general-testimonials-settings-group' ); ?>
             <div class="admin-input-container">
-                <label for="general-testimonials-leading-text">Testimonials Leading Text</label>
-                <input id="generalTestimonialsLeadingText" class="general-testimonials-leading-text" name="general-testimonials-leading-text" type="text" value="<?php echo get_option( 'general-testimonials-leading-text' ); ?>" />
+                <label class="admin-input-container__label" for="general-testimonials-leading-text">Testimonials Leading Text</label>
+                <input id="generalTestimonialsLeadingText" class="admin-input-container__input general-testimonials-leading-text" name="general-testimonials-leading-text" type="text" value="<?php echo get_option( 'general-testimonials-leading-text' ); ?>" />
             </div>
             <div class="admin-input-container">
-                <label for="general-testimonials-border-radius">Border Radius</label>
-                <input id="generalTestimonialsBorderRadius" class="general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" />
+                <label class="admin-input-container__label" for="general-testimonials-border-radius">Border Radius</label>
+                <input id="generalTestimonialsBorderRadius" class="admin-input-container__input general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" /><span class="admin-input-container__trailing-text">px</span>
             </div>
             <?php submit_button(); ?>
         </form>
