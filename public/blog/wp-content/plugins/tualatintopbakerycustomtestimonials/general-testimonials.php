@@ -39,12 +39,16 @@ add_action('init', 'gt_create_testimonial_post_type');
 /*Set up the settings page inputs*/
 function gt_register_settings() {
     add_option( 'general-testimonials-leading-text', 'Some text' );
+    add_option( 'general-testimonials-image-width-height', "150" );
     add_option( 'general-testimonials-border-radius', "45" );
     add_option( 'general-testimonials-testimonials-per-row', "2" );
-    
+    add_option( 'general-testimonials-number-to-display', "" );
+
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-leading-text', 'gt_validatetextfield' );
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-image-width-height', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-border-radius', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-testimonials-per-row', 'gt_validatetextfield' );  
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-number-to-display', 'gt_validatetextfield' );  
 }
 add_action( 'admin_init', 'gt_register_settings');
 
@@ -63,7 +67,7 @@ function gt_validatetextfield( $input ) {
 
 function gt_generate_settings_page() {
     ?>
-    <h2>General Testimonials Settings</h2>
+    <h1 class="general-testimonials__plugin-title">General Testimonials Settings</h1>
     <?php screen_icon(); ?>
     <form class="testimonials-settings-form" method="post" action="options.php">
         <?php settings_fields( 'general-testimonials-settings-group' ); ?>
@@ -71,9 +75,13 @@ function gt_generate_settings_page() {
                 <label class="admin-input-container__label" for="general-testimonials-leading-text">Testimonials Leading Text</label>
                 <input id="generalTestimonialsLeadingText" class="admin-input-container__input general-testimonials-leading-text" name="general-testimonials-leading-text" type="text" value="<?php echo get_option( 'general-testimonials-leading-text' ); ?>" />
             </div>
+                    <div class="admin-input-container">
+                <label class="admin-input-container__label" for="general-testimonials-image-width-height">Image Width, Height (60-150px)</label>
+                <input id="generalTestimonialsNumberToDisplay" class="admin-input-container__input smaller general-testimonials-image-width-height" name="general-testimonials-image-width-height" type="number" value="<?php echo get_option( 'general-testimonials-image-width-height' ); ?>" min="60" max="150" /><span class="admin-input-container__trailing-text">px</span>
+            </div>
             <div class="admin-input-container">
                 <label class="admin-input-container__label" for="general-testimonials-border-radius">Image Border Radius</label>
-                <input id="generalTestimonialsBorderRadius" class="admin-input-container__input general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" /><span class="admin-input-container__trailing-text">px</span>
+                <input id="generalTestimonialsImageWidthHeight" class="admin-input-container__input general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" /><span class="admin-input-container__trailing-text">px</span>
             </div>
             <div class="admin-input-container">
                 <span class="admin-input-container__label">Number of Testimonials Per Row</span>         
@@ -81,6 +89,10 @@ function gt_generate_settings_page() {
                 <label class="admin-input-container__label--right" for="generalTestimonialsTestimonialsPerRow0">2</label>
                 <input id="generalTestimonialsTestimonialsPerRow1" class="general-testimonials-testimonials-per-row" name="general-testimonials-testimonials-per-row" type="radio" value="3" <?php if(get_option( 'general-testimonials-testimonials-per-row' ) === "3") { echo 'checked="checked"'; } ?> />
                 <label class="admin-input-container__label--right" for="generalTestimonialsTestimonialsPerRow1">3</label>
+            </div>
+            <div class="admin-input-container">
+                <label class="admin-input-container__label" for="general-testimonials-number-to-display">Testimonials to Display (Empty: display all)</label>
+                <input id="generalTestimonialsNumberToDisplay" class="admin-input-container__input smaller general-testimonials-number-to-display" name="general-testimonials-number-to-display" type="number" value="<?php echo get_option( 'general-testimonials-number-to-display' ); ?>" />
             </div>
             <?php submit_button(); ?>
         </form>
@@ -189,7 +201,6 @@ function gt_get_url($post) {
 
 //Register the shortcode so we can show testimonials.
 function gt_load_testimonials($a) {
-
     $args = array(
         "post_type" => "general-testimonials"
     );
@@ -207,35 +218,44 @@ function gt_load_testimonials($a) {
     echo '<div class="testimonials-container">';
     echo '<h3 class="testimonials-container__heading">' . get_option( 'general-testimonials-leading-text' ) . '</h3>';
     echo '<div class="testimonials-container__inner-wrapper">';
+    
+    $numberToDisplay = get_option( 'general-testimonials-number-to-display' );
+    if( $numberToDisplay === "") {
+        $numberToDisplay = -1;
+    }
+    $numberToDisplay = (int)$numberToDisplay;
+    $count = 0;
     foreach ($posts as $post) {
-        $url_thumb = wp_get_attachment_thumb_url( get_post_thumbnail_id($post->ID ));
-        $url_altText = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true );
-        $providedName = gt_get_testimonialprovidedname( $post );
-        $label = gt_get_testimoniallabel( $post );
-        $link = gt_get_url( $post );
-        echo '<div class="testimonial">';
-        if ( !empty( $url_thumb ) ) {
-            echo '<img class="testimonial__image" src="' . $url_thumb . '" alt="' . $url_altText . '" />';
-        }
-        echo '<h4 class="testimonial__title">' . $post->post_title . '</h4>';
-        if ( !empty( $post->post_content ) ) {
-            echo '<p class="testimonial__content">' . $post->post_content . '</p>';
-        }
-        if ( !empty( $providedName ) ) {
-            if (!empty( $link )) {
-                echo '<span class="testimonial__provided-name"><a class="testimonial__link" href="' . $link . '" target="__blank">' . $providedName . '</a></span>';
-            } else {
-                echo '<span class="testimonial__provided-name">' . $providedName . '</span>';
+        if( $count < $numberToDisplay  || $numberToDisplay === -1){
+            $url_thumb = wp_get_attachment_thumb_url( get_post_thumbnail_id($post->ID ));
+            $url_altText = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true );
+            $providedName = gt_get_testimonialprovidedname( $post );
+            $label = gt_get_testimoniallabel( $post );
+            $link = gt_get_url( $post );
+            echo '<div class="testimonial">';
+            if ( !empty( $url_thumb ) ) {
+                echo '<img class="testimonial__image" src="' . $url_thumb . '" alt="' . $url_altText . '" />';
             }
+            echo '<h4 class="testimonial__title">' . $post->post_title . '</h4>';
+            if ( !empty( $post->post_content ) ) {
+                echo '<p class="testimonial__content">' . $post->post_content . '</p>';
+            }
+            if ( !empty( $providedName ) ) {
+                if (!empty( $link )) {
+                    echo '<span class="testimonial__provided-name"><a class="testimonial__link" href="' . $link . '" target="__blank">' . $providedName . '</a></span>';
+                } else {
+                    echo '<span class="testimonial__provided-name">' . $providedName . '</span>';
+                }
+            }
+            if ( !empty( $label ) ) {
+                echo '<span class="testimonial__label">, ' . $label . '</span>';
+            }
+            echo '</div>';
         }
-        if ( !empty( $label ) ) {
-            echo '<span class="testimonial__label">, ' . $label . '</span>';
-        }
-        echo '</div>';
+        $count++;
     }
     echo '</div>';
     echo '</div>';
-    
 }
 add_shortcode( "general_testimonials", "gt_load_testimonials" );
 add_filter( 'widget_text', 'do_shortcode' );
