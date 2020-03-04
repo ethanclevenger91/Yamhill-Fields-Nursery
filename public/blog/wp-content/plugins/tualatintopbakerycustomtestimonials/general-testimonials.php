@@ -26,12 +26,12 @@ function gt_create_testimonial_post_type() {
                     'singular_name' => __('General Testimonial')
                 ),
                 'public' => true,
-                'supports' => array('title', 'editor', 'thumbnail', 'custom_fields'),
+                'supports' => array( 'title', 'editor', 'thumbnail', 'custom_fields' ),
                 'hierarchical' => false
             )
     );
 }
-add_action('init', 'gt_create_testimonial_post_type');
+add_action( 'init', 'gt_create_testimonial_post_type' );
 
 
 /*Add a settings page for the plugin*/
@@ -41,12 +41,14 @@ function gt_register_settings() {
     add_option( 'general-testimonials-leading-text', 'Some text' );
     add_option( 'general-testimonials-image-width-height', "150" );
     add_option( 'general-testimonials-border-radius', "45" );
+    add_option( 'general-testimonials-float-image-direction', "left" );
     add_option( 'general-testimonials-testimonials-per-row', "2" );
     add_option( 'general-testimonials-number-to-display', "" );
 
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-leading-text', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-image-width-height', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-border-radius', 'gt_validatetextfield' );
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-float-image-direction', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-testimonials-per-row', 'gt_validatetextfield' );  
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-number-to-display', 'gt_validatetextfield' );  
 }
@@ -57,7 +59,7 @@ add_action( 'admin_init', 'gt_register_settings');
 function gt_add_options_page() {
     add_options_page( 'Page Title', 'General Testimonials Settings', 'manage_options', 'general-testimonials', 'gt_generate_settings_page' );
 }
-add_action( 'admin_menu', 'gt_add_options_page');
+add_action( 'admin_menu', 'gt_add_options_page' );
 
 
 function gt_validatetextfield( $input ) {
@@ -75,13 +77,20 @@ function gt_generate_settings_page() {
                 <label class="admin-input-container__label" for="general-testimonials-leading-text">Testimonials Leading Text</label>
                 <input id="generalTestimonialsLeadingText" class="admin-input-container__input general-testimonials-leading-text" name="general-testimonials-leading-text" type="text" value="<?php echo get_option( 'general-testimonials-leading-text' ); ?>" />
             </div>
-                    <div class="admin-input-container">
+            <div class="admin-input-container">
                 <label class="admin-input-container__label" for="general-testimonials-image-width-height">Image Width, Height (60-150px)</label>
                 <input id="generalTestimonialsNumberToDisplay" class="admin-input-container__input smaller general-testimonials-image-width-height" name="general-testimonials-image-width-height" type="number" value="<?php echo get_option( 'general-testimonials-image-width-height' ); ?>" min="60" max="150" /><span class="admin-input-container__trailing-text">px</span>
             </div>
             <div class="admin-input-container">
                 <label class="admin-input-container__label" for="general-testimonials-border-radius">Image Border Radius</label>
                 <input id="generalTestimonialsImageWidthHeight" class="admin-input-container__input general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" /><span class="admin-input-container__trailing-text">px</span>
+            </div>
+            <div class="admin-input-container">
+                <span class="admin-input-container__label">Float Image Direction</span>         
+                <input id="generalTestimonialsFloatImageDirection0" class="general-testimonials-float-image-direction" name="general-testimonials-float-image-direction" type="radio" value="left" <?php if(get_option( 'general-testimonials-float-image-direction' ) === "left") { echo 'checked="checked"'; } ?> />
+                <label class="admin-input-container__label--right" for="generalTestimonialsFloatImageDirection0">Left</label>
+                <input id="generalTestimonialsFloatImageDirection1" class="general-testimonials-float-image-direction" name="general-testimonials-float-image-direction" type="radio" value="right" <?php if(get_option( 'general-testimonials-float-image-direction' ) === "right") { echo 'checked="checked"'; } ?> />
+                <label class="admin-input-container__label--right" for="generalTestimonialsFloatImageDirection1">Right</label>
             </div>
             <div class="admin-input-container">
                 <span class="admin-input-container__label">Number of Testimonials Per Row</span>         
@@ -125,7 +134,7 @@ function gt_url_custom_metabox() {
     }
    
     $errorslink = "";
-    if (!preg_match("/http(s?):\/\//", $testimonialurl) && $testimonialurl != "") {
+    if (!preg_match( "/http(s?):\/\//", $testimonialurl) && $testimonialurl != "" ) {
         $errorslink = "This URL is not valid";
         $testimonialurl = "http://";
     }
@@ -154,22 +163,22 @@ function gt_url_custom_metabox() {
 
 
 //Save user provided field data.
-function gt_save_custom_testimonialprovidedname($post_id) {
+function gt_save_custom_testimonialprovidedname( $post_id ) {
     global $post;
     
-    if( isset($_POST['testimonialprovidedname']) ) {
+    if( isset( $_POST['testimonialprovidedname']) ) {
         update_post_meta( $post->ID, 'testimonialprovidedname', $_POST['testimonialprovidedname'] );
     }
 }
 add_action( 'save_post', 'gt_save_custom_testimonialprovidedname' );
 
-function gt_get_testimonialprovidedname($post) {
+function gt_get_testimonialprovidedname( $post ) {
     $testimonialname = get_post_meta( $post->ID, 'testimonialprovidedname', true );
     return $testimonialname;
 }
 
 
-function gt_save_custom_testimoniallabel($post_id) {
+function gt_save_custom_testimoniallabel( $post_id ) {
     global $post;
     
     if( isset($_POST['testimoniallabel']) ) {
@@ -178,13 +187,13 @@ function gt_save_custom_testimoniallabel($post_id) {
 }
 add_action( 'save_post', 'gt_save_custom_testimoniallabel' );
 
-function gt_get_testimoniallabel($post) {
+function gt_get_testimoniallabel( $post ) {
     $testimoniallabel = get_post_meta( $post->ID, 'testimoniallabel', true );
     return $testimoniallabel;
 }
 
 
-function gt_save_custom_url($post_id) {
+function gt_save_custom_url( $post_id ) {
     global $post;
     
     if( isset($_POST['testimonialurl']) ) {
@@ -193,22 +202,22 @@ function gt_save_custom_url($post_id) {
 }
 add_action( 'save_post', 'gt_save_custom_url' );
 
-function gt_get_url($post) {
+function gt_get_url( $post ) {
     $testimonialurl = get_post_meta( $post->ID, 'testimonialurl', true );
     return $testimonialurl;
 }
 
 
 //Register the shortcode so we can show testimonials.
-function gt_load_testimonials($a) {
+function gt_load_testimonials( $a ) {
     $args = array(
         "post_type" => "general-testimonials"
     );
 
-    if (isset($a['rand']) && $a['rand'] == true) {
+    if ( isset( $a['rand'] ) && $a['rand'] == true ) {
         $args['orderby'] = 'rand';
     }
-    if (isset($a['max'])) {
+    if ( isset( $a['max']) ) {
         $args['posts_per_page'] = (int) $a['max'];
     }
 
@@ -220,15 +229,15 @@ function gt_load_testimonials($a) {
     echo '<div class="testimonials-container__inner-wrapper">';
     
     $numberToDisplay = get_option( 'general-testimonials-number-to-display' );
-    if( $numberToDisplay === "") {
+    if( $numberToDisplay === "" ) {
         $numberToDisplay = -1;
     }
-    $numberToDisplay = (int)$numberToDisplay;
+    $numberToDisplay = (int) $numberToDisplay;
     $count = 0;
     foreach ($posts as $post) {
         if( $count < $numberToDisplay  || $numberToDisplay === -1){
-            $url_thumb = wp_get_attachment_thumb_url( get_post_thumbnail_id($post->ID ));
-            $url_altText = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true );
+            $url_thumb = wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) );
+            $url_altText = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
             $providedName = gt_get_testimonialprovidedname( $post );
             $label = gt_get_testimoniallabel( $post );
             $link = gt_get_url( $post );
