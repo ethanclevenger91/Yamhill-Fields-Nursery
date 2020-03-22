@@ -349,20 +349,25 @@ header { min-height: 270px; }
 .plant__zoom-in-container { display: none; }
 .plant__zoom-in-container.inspect { display: block; position: absolute; top: 50px; left: 410px; width: 370px; height: 300px; overflow: hidden; z-index: 101; 
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 4px 8px rgba(0,0,0,0.8); }
-.plant__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; 
-                  background: url('../images/plants/cactus-2x-width.jpg') 91px 73px/cover no-repeat; transform: scale(2); }
+.plant__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
 .plant__description { padding-bottom: 10px; }
 .plant__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
 
-.plant.cactus .plant__background-image { background: url('../images/plants/cactus.jpg') 50% 50%/cover no-repeat; }
-.plant.sapling .plant__background-image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
-.plant.fern .plant__background-image { background: url('../images/plants/fern-in-pot.jpg') 50% 50%/cover no-repeat; }
-.plant.blueberry .plant__background-image { background: url('../images/plants/blueberry-bush.jpg') 50% 50%/cover no-repeat; }
+.plant.zero .plant__background-image { background: url('../images/plants/cactus.jpg') 50% 50%/cover no-repeat; }
+.plant.one .plant__background-image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
+.plant.two .plant__background-image { background: url('../images/plants/fern-in-pot.jpg') 50% 50%/cover no-repeat; }
+.plant.three .plant__background-image { background: url('../images/plants/blueberry-bush.jpg') 50% 50%/cover no-repeat; }
+.plant.four .plant__background-image { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
+.plant.five .plant__background-image { background: url('../images/plants/grasses-up-close.jpg') 50% 50%/cover no-repeat; }
 
-.plant.potted-plants .plant__background-image { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
-.plant.grass .plant__background-image { background: url('../images/plants/grasses-up-close.jpg') 50% 50%/cover no-repeat; }
+.plant.zero .plant__zoom-in { background: url('../images/plants/cactus-2x-width.jpg') 91px 73px/cover no-repeat; }
+.plant.one .plant__zoom-in { background: url('../images/plants/trees-outside-nursery.jpg') 91px 73px/cover no-repeat; }
+.plant.two .plant__zoom-in { background: url('../images/plants/fern-in-pot.jpg') 91px 73px/cover no-repeat; }
+.plant.three .plant__zoom-in { background: url('../images/plants/blueberry-bush.jpg') 91px 73px/cover no-repeat; }
+.plant.four .plant__zoom-in { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 91px 73px/cover no-repeat; }
+.plant.five .plant__zoom-in { background: url('../images/plants/grasses-up-close.jpg') 91px 73px/cover no-repeat; }
 
-.plant.grass { padding-bottom: 0; }
+.plant.six { padding-bottom: 0; }
 
 
 /*Supplies page*/
@@ -436,7 +441,7 @@ header { min-height: 270px; }
     
     
     /*Plants*/
-    .plant.potted-plants, .plant.grass { padding-bottom: 0; }
+    .plant.five, .plant.six { padding-bottom: 0; }
 
     /*Supplies*/
     .supply.assorted-seeds { padding-bottom: 0; }

@@ -28,43 +28,63 @@
                             <p>Come buy lots of house plants at our fantastic nursery.</p>
                             <p>NOTE: Prices and supplies are approximate and are provided as an estimate only.</p>
                         </div>
-                        <div class="plant cactus col-sma-4">
+                        <div class="plant zero col-sma-4">
                             <h4 class="plant__title">Cacti</h4>
                             <div class="plant__background-image"></div>
                             <div class="plant__zoom-in-container">
-                                <div class="plant__zoom-in">Plant image</div>
+                                <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background">Inspect</div>
                             <div class="plant__description">Pretty and small, perfect for an easy house-plant.</div>
                             <div class="plant__price">$5</div>
                         </div>
-                        <div class="plant sapling col-sma-4">
+                        <div class="plant one col-sma-4">
                             <h4 class="plant__title">Deciduous and Evergreen Saplings</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container">
+                                <div class="plant__zoom-in"></div>
+                            </div>
+                            <div class="plant__inspect-background">Inspect</div>
                             <div class="plant__description">Time to get an outdoor sapling for your yard or farm.  Assorted Varieties.</div>
                             <div class="plant__price">Typically around $70-$100</div>
                         </div>
-                        <div class="plant blueberry col-sma-4">
+                        <div class="plant two col-sma-4">
                             <h4 class="plant__title">Blueberry</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container">
+                                <div class="plant__zoom-in"></div>
+                            </div>
+                            <div class="plant__inspect-background">Inspect</div>
                             <div class="plant__description">Now's your chance to get fresh backyard blueberries!</div>
                             <div class="plant__price">$15</div>
                         </div>
-                        <div class="plant fern col-sma-4">
+                        <div class="plant three col-sma-4">
                             <h4 class="plant__title">Fern</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container">
+                                <div class="plant__zoom-in"></div>
+                            </div>
+                            <div class="plant__inspect-background">Inspect</div>
                             <div class="plant__description">Low maintenance and very good as a background or center plant.</div>
                             <div class="plant__price">$20</div>
                         </div>
-                        <div class="plant potted-plants col-sma-4">
+                        <div class="plant four col-sma-4">
                             <h4 class="plant__title">Potted Plants</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container">
+                                <div class="plant__zoom-in"></div>
+                            </div>
+                            <div class="plant__inspect-background">Inspect</div>
                             <div class="plant__description">Time to get an outdoor sapling for your yard or farm.</div>
                             <div class="plant__price">$30</div>
                         </div>
-                        <div class="plant grass col-sma-4">
+                        <div class="plant five col-sma-4">
                             <h4 class="plant__title">Grass</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container">
+                                <div class="plant__zoom-in"></div>
+                            </div>
+                            <div class="plant__inspect-background">Inspect</div>
                             <div class="plant__description">We sell small pots of grass for those you in need of a small addition
                                 to a garden or yard.</div>
                             <div class="plant__price">$4</div>
