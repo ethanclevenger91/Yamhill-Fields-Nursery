@@ -356,7 +356,7 @@ header { min-height: 270px; }
 .plant.four .plant__background-image { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
 .plant.five .plant__background-image { background: url('../images/plants/grasses-up-close.jpg') 50% 50%/cover no-repeat; }
 
-.plant.zero .plant__zoom-in { background: url('../images/plants/cactus-2x-width.jpg') 91px 73px/cover no-repeat; }
+.plant.zero .plant__zoom-in { background: url('../images/plants/cactus-bigger-width.jpg') 91px 73px/cover no-repeat; }
 .plant.one .plant__zoom-in { background: url('../images/plants/trees-outside-nursery.jpg') 91px 73px/cover no-repeat; }
 .plant.two .plant__zoom-in { background: url('../images/plants/fern-in-pot.jpg') 91px 73px/cover no-repeat; }
 .plant.three .plant__zoom-in { background: url('../images/plants/blueberry-bush.jpg') 91px 73px/cover no-repeat; }
@@ -536,7 +536,7 @@ header { min-height: 270px; }
     .supply__price { font-size: 19px; }
     
     .supply__inspect-background.show { display: inline-block; padding-bottom: 5px; font-weight: bold; color: #325b53; cursor: zoom-in; }
-    .supply__zoom-in-container.inspect { display: block; position: absolute; top: 400px; left: 15px; width: 370px; height: 240px; overflow: hidden; z-index: 101; 
+    .supply__zoom-in-container.inspect { display: block; position: absolute; top: 340px; left: 15px; width: 370px; height: 240px; overflow: hidden; z-index: 101; 
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
     .supply__zoom-in { width: 370px; height: 240px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
 
