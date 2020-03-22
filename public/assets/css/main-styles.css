@@ -341,13 +341,19 @@ header { min-height: 270px; }
 
 
 /*Plants page*/
-.plant { padding-bottom: 40px; }
+.plant { position: relative; padding-bottom: 40px; }
 .plant__title { padding-bottom: 15px; font-size: 20px; font-weight: bold; text-align: center; color: #4f7942; }
 .plant__background-image { width: 100%; height: 240px; margin-bottom: 8px; }
+.plant__inspect-background { padding-bottom: 5px; font-weight: bold; cursor: zoom-in; }
+.plant__zoom-in-container { display: none; }
+.plant__zoom-in-container.inspect { display: block; position: absolute; top: 50px; left: 410px; width: 370px; height: 300px; overflow: hidden; z-index: 101; 
+                           border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 4px 8px rgba(0,0,0,0.8); }
+.plant__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; 
+                 background: url('../images/plants/cactus-2x-width.jpg') 91px 73px/cover no-repeat; transform: scale(2); }
 .plant__description { padding-bottom: 10px; }
 .plant__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
 
-.plant.cactus .plant__background-image { background: url('../images/plants/catus.jpg') 50% 50%/cover no-repeat; }
+.plant.cactus .plant__background-image { background: url('../images/plants/cactus.jpg') 50% 50%/cover no-repeat; }
 .plant.sapling .plant__background-image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
 .plant.fern .plant__background-image { background: url('../images/plants/fern-in-pot.jpg') 50% 50%/cover no-repeat; }
 .plant.blueberry .plant__background-image { background: url('../images/plants/blueberry-bush.jpg') 50% 50%/cover no-repeat; }
@@ -389,7 +395,7 @@ header { min-height: 270px; }
 }
 
 @media only screen and (min-width: 700px) {
-    .plant:nth-of-type(2n){ content: ""; display: block; clear: both; }
+    .plant:nth-of-type(3n+2){ content: ""; display: block; clear: both; }
 }
 
 @media only screen and (min-width: 1200px){   
@@ -503,7 +509,7 @@ header { min-height: 270px; }
     /*Plants page*/
     .plant { }
     .plant__title { font-size: 24px; }
-    .plant__background-image { height: 360px; }
+    .plant__background-image { height: 300px; }
     .plant__description { }
     .plant__price { font-size: 19px; }
 
