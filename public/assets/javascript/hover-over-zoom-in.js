@@ -35,6 +35,11 @@ function checkBrowserWidth() {
 }
 
 function toggleExamine(event, plantNumber) {
+    for (let i = 0; i < 6; i++) {
+        if(i !== plantNumber){
+            document.getElementsByClassName("plant__zoom-in-container")[i].classList.remove("inspect");
+        }
+    }
     if (window.innerWidth >= 1200) {
         document.getElementsByClassName("plant__zoom-in-container")[plantNumber].classList.toggle("inspect");
     }
