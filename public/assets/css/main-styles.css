@@ -519,7 +519,7 @@ header { min-height: 270px; }
     /*Plants page*/
     .plant { }
     .plant__title { font-size: 24px; }
-    .plant__background-image { height: 300px; }
+    .plant__background-image { height: 300px; cursor: zoom-in; }
     .plant__description { }
     .plant__price { font-size: 19px; }
 
@@ -531,7 +531,7 @@ header { min-height: 270px; }
     /*Supplies*/
     .supply { }
     .supply__title { font-size: 24px; }
-    .supply__background-image { height: 240px; }
+    .supply__background-image { height: 240px; cursor: zoom-in; }
     .supply__description { }
     .supply__price { font-size: 19px; }
     

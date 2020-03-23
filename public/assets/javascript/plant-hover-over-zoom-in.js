@@ -6,6 +6,10 @@ for (let i = 0; i < 6; i++) {
     let itemImageZoomIn = document.getElementsByClassName("plant__zoom-in")[i];
     let plantZoomInContainer = document.getElementsByClassName("plant__zoom-in-container")[i];
 
+    itemImage.addEventListener("click", function () {
+        toggleExamine(event, i);
+    });
+
     itemImage.addEventListener("mousemove", function () {
         updateZoomInImage(event, i);
     });

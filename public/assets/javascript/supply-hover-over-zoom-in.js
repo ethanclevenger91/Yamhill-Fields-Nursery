@@ -5,6 +5,10 @@ for (let i = 0; i < 5; i++) {
     let itemImageZoomIn = document.getElementsByClassName("supply__zoom-in")[i];
     let supplyZoomInContainer = document.getElementsByClassName("supply__zoom-in-container")[i];
 
+    itemImage.addEventListener("click", function () {
+        toggleExamine(event, i);
+    });
+
     itemImage.addEventListener("mousemove", function () {
         updateZoomInImage(event, i);
     });
