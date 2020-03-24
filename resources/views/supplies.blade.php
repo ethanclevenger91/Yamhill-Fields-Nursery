@@ -33,7 +33,7 @@
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
-                            <div class="supply__inspect-background">Inspect</div>
+                            <div class="supply__inspect-background"></div>
                             <div class="supply__description">Gardening shovels, work gloves, pruning supplies, etc.  
                                 Useful small gardening shovel, great for planting small potted plants.</div>
                             <div class="supply__price">Assorted prices</div>
@@ -44,7 +44,7 @@
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
-                            <div class="supply__inspect-background">Inspect</div>
+                            <div class="supply__inspect-background"></div>
                             <div class="supply__description">Assorted varieties.  Great for your houseplants, small gardens, and hard-to-reach plants.</div>
                             <div class="supply__price">Assorted prices</div>
                         </div>
@@ -54,7 +54,7 @@
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
-                            <div class="supply__inspect-background">Inspect</div>
+                            <div class="supply__inspect-background"></div>
                             <div class="supply__description">Very helpful for new plants!  Great for planting seeds in small and large pots.
                                 Give them the best and watch your new plants grow heartily.</div>
                             <div class="supply__price">Assorted prices</div>
@@ -65,7 +65,7 @@
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
-                            <div class="supply__inspect-background">Inspect</div>
+                            <div class="supply__inspect-background"></div>
                             <div class="supply__description">Great for planting seeds in small and large pots.</div>
                             <div class="supply__price">Assorted prices</div>
                         </div>		
@@ -75,7 +75,7 @@
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
-                            <div class="supply__inspect-background">Inspect</div>
+                            <div class="supply__inspect-background"></div>
                             <div class="supply__description">Supplies vary.  We sell a variety of flower, vegetable, and other seeds for your garden 
                                 or landscape.</div>
                             <div class="supply__price">Assorted prices</div>
