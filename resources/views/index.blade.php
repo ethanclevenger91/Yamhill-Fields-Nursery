@@ -64,18 +64,24 @@
                         <div class="col-sma-5">
                             <div class="index-product zero">
                                 <div class="index-product__name"><a href="/plants" class="index-product__name-link">Saplings for the yard</a></div>
-                                <div class="index-product__image"><a href="/plants" class="index-product__image-link"></a></div>
+                                <div class="index-product__image">
+                                    <div class="index-product__background-layer">
+                                        <a href="/plants" class="index-product__image-link"><span class="sr-only">Plants</span></a>
+                                    </div>    
+                                </div>
                                 <div class="index-product__description">We sell deciduous and evergreens.  Grown here in the nursery!</div>
-                                <div class="index-product__background-layer"><a href="/plants" class="index-product__background-layer-link"></a></div>
                                 <div class="clear-both"></div>
                             </div>
                         </div>
                         <div class="col-sma-5">
                             <div class="index-product one">
                                 <div class="index-product__name"><a href="/supplies" class="index-product__name-link">Watering cans and more</a></div>
-                                <div class="index-product__image"><a href="/supplies" class="index-product__image-link"></a></div>
+                                <div class="index-product__image">
+                                    <div class="index-product__background-layer">
+                                        <a href="/supplies" class="index-product__image-link"><span class="sr-only">Supplies</span></a>
+                                    </div>
+                                </div>
                                 <div class="index-product__description">We are here for your gardening supplies.  Give us a call or drop on in.</div>
-                                <div class="index-product__background-layer"><a href="/supplies" class="index-product__background-layer-link"></a></div>
                                 <div class="clear-both"></div>
                             </div>
                         </div>
