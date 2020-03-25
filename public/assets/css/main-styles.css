@@ -288,7 +288,7 @@ header { min-height: 270px; }
 .slideshow { position: relative; width: 100%; max-width: 670px; padding-bottom: 20px; margin-left: auto; margin-right: auto; background-color: #ffffff; }
 .slideshow__image { height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
 .slideshow__image__link { display: block; width: 100%; height: 220px; padding-bottom: 56.25%; transition: 0.5s ease-in; }
-.slideshow__image:hover .slideshow__image__link { background-color: rgba(113, 188, 120, 0.25); transition: 0.5s ease-in; }
+.slideshow__image:hover .slideshow__image__link { background-color: rgba(50, 91, 83, 0.2); transition: 0.5s ease-in; }
 .slideshow__slide-description { position: relative; top: 182px; padding-left: 10px; padding-right: 20px; text-align: right; font-size: 22px; 
                                 font-weight: bold; color: #ffffff; text-shadow: 0.8px 1.2px #333333; }
 .slideshow__image:hover .slideshow__slide-description { text-decoration: underline; }
