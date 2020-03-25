@@ -61,10 +61,21 @@
                     </div>
                     <div class="content-row">
                         <div class="col-sma-1">&nbsp;</div>
-                        <div class="col-sma-10">
-                            <h3>Serving Gardeners and Landscapers Since 1982</h3>
-                            <p>We've had the honor of selling plants and landscaping and gardening supplies to our customers for many years.
-                                Drop and by and see why gardeners and landscapers make us their go-to garden and landscaping store!</p>
+                        <div class="col-sma-5">
+                            <div class="index-product zero">
+                                <div class="index-product__name"><a href="/plants" class="index-product__name-link">Saplings for the yard</a></div>
+                                <div class="index-product__image"><a href="/plants" class="index-product__image-link"></a></div>
+                                <div class="index-product__description">We sell deciduous and evergreens.  Grown here in the nursery!</div>
+                                <div class="clear-both"></div>
+                            </div>
+                        </div>
+                        <div class="col-sma-5">
+                            <div class="index-product one">
+                                <div class="index-product__name"><a href="/supplies" class="index-product__name-link">Watering cans and more</a></div>
+                                <div class="index-product__image"><a href="/supplies" class="index-product__image-link"></a></div>
+                                <div class="index-product__description">We are here for your gardening supplies.  Give us a call or drop on in.</div>
+                                <div class="clear-both"></div>
+                            </div>
                         </div>
                         <div class="col-sma-1">&nbsp;</div>
                     </div>	
@@ -113,6 +124,15 @@
                             echo $content;
                             ?>
                         </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="col-sma-1">&nbsp;</div>
+                        <div class="col-sma-10">
+                            <h3>Serving Gardeners and Landscapers Since 1982</h3>
+                            <p>We've had the honor of selling plants and landscaping and gardening supplies to our customers for many years.
+                                Drop and by and see why gardeners and landscapers make us their go-to garden and landscaping store!</p>
+                        </div>
+                        <div class="col-sma-1">&nbsp;</div>
                     </div>
                     <div class="content-row">
                         <div class="col-sma-12">

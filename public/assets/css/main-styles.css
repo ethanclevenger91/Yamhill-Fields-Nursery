@@ -308,6 +308,16 @@ header { min-height: 270px; }
 .currentSlideButton { opacity: 1; }
 .slideshow__slide-button.currentSlideButton:hover { opacity: 1; }
 
+.index-product { padding-bottom: 25px; }
+.index-product__name { padding-bottom: 5px; text-align: center; }
+.index-product__name-link { font-size: 20px; font-weight: bold; color: #77874a; }
+.index-product__image { float: left; width: 120px; height: 100px; margin-right: 10px; }
+.index-product__image-link { display: inline-block; width: 100%; height: 100%; }
+.index-product__description { }
+
+.index-product.zero .index-product__image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
+.index-product.one .index-product__image { background: url('../images/supplies/two-watering-cans.jpg') 50% 50%/cover no-repeat; }
+
 .blog-post { padding-bottom: 25px; }
 .blog-post__title { display: block; padding-bottom: 2px; font-size: 20px; color: #4f7942; }
 .blog-post__title__link { font-size: inherit; color: inherit; }
@@ -504,14 +514,20 @@ header { min-height: 270px; }
     /*Index page */
     .index-content-image { height: 400px; }
     
+    .slideshow { position: relative; width: 670px; margin-left: auto; margin-right: 0px; }
+    .slideshow__image { position: relative; padding-bottom: 56.25%; }
+    
     .slideshow__icon { width: 36px; height: 36px; }
     .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }
     .slideshow__icon.right { position: absolute; top: 170px; right: 3%; }
     .slideshow__icon__link { font-size: 26px; }
+   
+    .index-product { padding-bottom: 0; }
+    .index-product__name { padding-left: 15px; text-align: left; }
+    .index-product__name-link { font-size: 22px;}
+    .index-product__image { float: none; width: 100%; height: 300px; }
+    .index-product__description { padding-top: 3px; }
     
-    .slideshow { position: relative; width: 670px; margin-left: auto; margin-right: 0px; }
-    .slideshow__image { position: relative; padding-bottom: 56.25%; }
-
     .blog-post { padding-bottom: 0px; }
     .blog-post__title { font-size: 24px; }
 
