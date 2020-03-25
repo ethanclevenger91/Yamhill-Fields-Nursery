@@ -49,7 +49,7 @@
                             <div class="plant__price">Typically around $70-$100</div>
                         </div>
                         <div class="plant two col-sma-4">
-                            <h4 class="plant__title">Blueberry</h4>
+                            <h4 class="plant__title">Fern</h4>
                             <div class="plant__background-image"></div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
@@ -59,7 +59,7 @@
                             <div class="plant__price">$15</div>
                         </div>
                         <div class="plant three col-sma-4">
-                            <h4 class="plant__title">Fern</h4>
+                            <h4 class="plant__title">Blueberry Bush</h4>
                             <div class="plant__background-image"></div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
