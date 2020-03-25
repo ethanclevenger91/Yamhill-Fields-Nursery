@@ -26,7 +26,11 @@
                     <div class="content-row">
                         <div class="col-sma-7">
                             <div class="slideshow">
-                                <div class="slideshow__image"><a href="/" aria-label="" class="slideshow__image__link"></a></div>
+                                <div class="slideshow__image">
+                                    <a href="/" aria-label="" class="slideshow__image__link">
+                                        <div class="slideshow__slide-description"></div>
+                                    </a>
+                                </div>
                                 <div class="slideshow__icon left">
                                     <div class="slideshow__icon__link">&#10094;</div>
                                 </div>
