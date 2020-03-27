@@ -31,7 +31,8 @@
                         <div class="plant zero col-sma-4">
                             <h4 class="plant__title">Cacti</h4>
                             <div class="plant__background-image"></div>
-                            <div class="plant__zoom-in-container">
+                            <div class="plant__zoom-in-container-close">X</div>
+                            <div class="plant__zoom-in-container"> 
                                 <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background"></div>
@@ -41,6 +42,7 @@
                         <div class="plant one col-sma-4">
                             <h4 class="plant__title">Deciduous and Evergreen Saplings</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container-close">X</div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
                             </div>
@@ -51,6 +53,7 @@
                         <div class="plant two col-sma-4">
                             <h4 class="plant__title">Fern</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container-close">X</div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
                             </div>
@@ -61,6 +64,7 @@
                         <div class="plant three col-sma-4">
                             <h4 class="plant__title">Blueberry Bush</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container-close">X</div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
                             </div>
@@ -71,6 +75,7 @@
                         <div class="plant four col-sma-4">
                             <h4 class="plant__title">Potted Plants</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container-close">X</div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
                             </div>
@@ -81,6 +86,7 @@
                         <div class="plant five col-sma-4">
                             <h4 class="plant__title">Grass</h4>
                             <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container-close">X</div>
                             <div class="plant__zoom-in-container">
                                 <div class="plant__zoom-in"></div>
                             </div>

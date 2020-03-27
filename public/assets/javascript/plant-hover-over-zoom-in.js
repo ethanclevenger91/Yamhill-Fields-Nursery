@@ -5,6 +5,8 @@ for (let i = 0; i < 6; i++) {
     let itemImage = document.getElementsByClassName("plant__background-image")[i];
     let itemImageZoomIn = document.getElementsByClassName("plant__zoom-in")[i];
     let plantZoomInContainer = document.getElementsByClassName("plant__zoom-in-container")[i];
+    let plantInspectBackgroundClose = document.getElementsByClassName("plant__zoom-in-container-close")[i];
+
 
     itemImage.addEventListener("click", function () {
         toggleExamine(event, i);
@@ -14,6 +16,10 @@ for (let i = 0; i < 6; i++) {
         updateZoomInImage(event, i);
     });
     plantInspectBackground.addEventListener("click", function () {
+        toggleExamine(event, i);
+    });
+    
+    plantInspectBackgroundClose.addEventListener("click", function () {
         toggleExamine(event, i);
     });
 }
@@ -34,6 +40,7 @@ function checkBrowserWidth() {
 
         if (window.innerWidth < 1200) {
             document.getElementsByClassName("plant__zoom-in-container")[i].classList.remove("inspect");
+            document.getElementsByClassName("plant__zoom-in-container-close")[i].classList.remove("inspect");
         }
     }
 }
@@ -42,10 +49,12 @@ function toggleExamine(event, plantNumber) {
     for (let i = 0; i < 6; i++) {
         if(i !== plantNumber){
             document.getElementsByClassName("plant__zoom-in-container")[i].classList.remove("inspect");
+            document.getElementsByClassName("plant__zoom-in-container-close")[i].classList.remove("inspect");
         }
     }
     if (window.innerWidth >= 1200) {
         document.getElementsByClassName("plant__zoom-in-container")[plantNumber].classList.toggle("inspect");
+        document.getElementsByClassName("plant__zoom-in-container-close")[plantNumber].classList.toggle("inspect");
     }
 }
 
