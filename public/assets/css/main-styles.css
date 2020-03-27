@@ -288,7 +288,7 @@ header { min-height: 270px; }
 .slideshow { position: relative; width: 100%; max-width: 670px; padding-bottom: 20px; margin-left: auto; margin-right: auto; background-color: #ffffff; }
 .slideshow__image { height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
 .slideshow__image__link { display: block; width: 100%; height: 220px; padding-bottom: 56.25%; transition: 0.5s ease-in; }
-.slideshow__image:hover .slideshow__image__link { background-color: rgba(50, 91, 83, 0.2); transition: 0.5s ease-in; }
+.slideshow__image:hover .slideshow__image__link { background-color: rgba(50, 91, 83, 0.25); transition: 0.5s ease-in; }
 .slideshow__slide-description { position: relative; top: 182px; padding-left: 10px; padding-right: 20px; text-align: right; font-size: 22px; 
                                 font-weight: bold; color: #ffffff; text-shadow: 0.8px 1.2px #333333; }
 .slideshow__image:hover .slideshow__slide-description { text-decoration: underline; }
@@ -553,8 +553,9 @@ header { min-height: 270px; }
     .plant__inspect-background.show { display: inline-block; width: 18px; height: 28px; padding-bottom: 5px;
                                       background: url('../images/magnifying-glass.png') 50% 50%/cover no-repeat; cursor: pointer; }
     .plant__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 352px; padding-left: 10px; padding-right: 10px; 
-                                                border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
-                                                cursor: pointer; }
+                                              border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
+                                              transition: 0.4s ease-in; cursor: pointer; }
+    .plant__zoom-in-container-close.inspect:hover { background-color: #4f7942; transition: 0.4s ease-in; }
     .plant__zoom-in-container.inspect { display: block; position: absolute; top: 400px; left: 15px; width: 370px; height: 300px; overflow: hidden; z-index: 101; 
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
     .plant__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
@@ -569,8 +570,9 @@ header { min-height: 270px; }
     .supply__inspect-background.show { display: inline-block; width: 18px; height: 28px; padding-bottom: 5px; 
                                        background: url('../images/magnifying-glass.png') 50% 50%/cover no-repeat; cursor: pointer; }
     .supply__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 292px; padding-left: 10px; padding-right: 10px; 
-                                                border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
-                                                cursor: pointer; }
+                                               border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
+                                               transition: 0.4s ease-in; cursor: pointer; }
+    .supply__zoom-in-container-close.inspect:hover { background-color: #4f7942; transition: 0.4s ease-in; }
     .supply__zoom-in-container.inspect { display: block; position: absolute; top: 340px; left: 15px; width: 370px; height: 240px; overflow: hidden; z-index: 101; 
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
     .supply__zoom-in { width: 370px; height: 240px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }

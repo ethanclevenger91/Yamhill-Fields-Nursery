@@ -111,7 +111,7 @@ function runSlideShow() {
             slideButton3.classList.remove('currentSlideButton');
             currentSlideImageLink.href = "/about-us";
             currentSlideImageLink.setAttribute("aria-label", "About Us");
-            currentSlideDescription.innerHTML = "Rows and rows of plants";
+            currentSlideDescription.innerHTML = "Rows and rows of plants!";
         } else if (currentSlideNumber === 2) {
             currentSlide.style.backgroundImage = "url(" + slide2.src + ")";
             slideButton0.classList.remove('currentSlideButton');
@@ -120,7 +120,7 @@ function runSlideShow() {
             slideButton3.classList.remove('currentSlideButton');
             currentSlideImageLink.href = "/plants";
             currentSlideImageLink.setAttribute("aria-label", "Plants");
-            currentSlideDescription.innerHTML = "Green grass for yards";
+            currentSlideDescription.innerHTML = "Green grass for yards!";
         } else if (currentSlideNumber === 3) {
             currentSlide.style.backgroundImage = "url(" + slide3.src + ")";
             slideButton0.classList.remove('currentSlideButton');
