@@ -30,6 +30,7 @@
                         <div class="supply zero col-sma-6 col-lar-4">
                             <h4 class="supply__title">Assorted Garden Supplies</h4>
                             <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
@@ -41,6 +42,7 @@
                         <div class="supply one col-sma-6 col-lar-4">
                             <h4 class="supply__title">Watering can</h4>
                             <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
@@ -51,6 +53,7 @@
                         <div class="supply two col-sma-6 col-lar-4">
                             <h4 class="supply__title">Potting Soil </h4>
                             <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
@@ -62,6 +65,7 @@
                         <div class="supply three col-sma-6 col-lar-4">
                             <h4 class="supply__title">Clay and plastic pots</h4>
                             <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>
@@ -72,6 +76,7 @@
                         <div class="supply four col-sma-6 col-lar-4">
                             <h4 class="supply__title">Seeds (assorted)</h4>
                             <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
                             <div class="supply__zoom-in-container">
                                 <div class="supply__zoom-in"></div>
                             </div>

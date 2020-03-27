@@ -1,9 +1,11 @@
 
 for (let i = 0; i < 5; i++) {
     let supplyInspectBackground = document.getElementsByClassName("supply__inspect-background")[i];
+    
     let itemImage = document.getElementsByClassName("supply__background-image")[i];
     let itemImageZoomIn = document.getElementsByClassName("supply__zoom-in")[i];
     let supplyZoomInContainer = document.getElementsByClassName("supply__zoom-in-container")[i];
+    let supplyInspectBackgroundClose = document.getElementsByClassName("supply__zoom-in-container-close")[i];
 
     itemImage.addEventListener("click", function () {
         toggleExamine(event, i);
@@ -13,6 +15,10 @@ for (let i = 0; i < 5; i++) {
         updateZoomInImage(event, i);
     });
     supplyInspectBackground.addEventListener("click", function () {
+        toggleExamine(event, i);
+    });
+    
+    supplyInspectBackgroundClose.addEventListener("click", function () {
         toggleExamine(event, i);
     });
 }
@@ -33,6 +39,7 @@ function checkBrowserWidth() {
 
         if (window.innerWidth < 1200) {
             document.getElementsByClassName("supply__zoom-in-container")[i].classList.remove("inspect");
+            document.getElementsByClassName("supply__zoom-in-container-close")[i].classList.remove("inspect");
         }
     }
 }
@@ -41,11 +48,13 @@ function toggleExamine(event, supplyNumber) {
     for (let i = 0; i < 5; i++) {
         if(i !== supplyNumber){
             document.getElementsByClassName("supply__zoom-in-container")[i].classList.remove("inspect");
+            document.getElementsByClassName("supply__zoom-in-container-close")[i].classList.remove("inspect");
         }
     }
   
     if (window.innerWidth >= 1200) {
         document.getElementsByClassName("supply__zoom-in-container")[supplyNumber].classList.toggle("inspect");
+        document.getElementsByClassName("supply__zoom-in-container-close")[supplyNumber].classList.toggle("inspect");
     }
 }
 
