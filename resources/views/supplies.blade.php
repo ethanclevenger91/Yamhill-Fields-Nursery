@@ -85,6 +85,18 @@
                                 or landscape.</div>
                             <div class="supply__price">Assorted prices</div>
                         </div>
+                        <div class="supply five col-sma-6 col-lar-4">
+                            <h4 class="supply__title">Garden Hose</h4>
+                            <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
+                            <div class="supply__zoom-in-container">
+                                <div class="supply__zoom-in"></div>
+                            </div>
+                            <div class="supply__inspect-background"></div>
+                            <div class="supply__description">We sell hoses ranging from 25-100ft in length and &frac12;" and &frac34;" diameters.  
+                                Perfect for any size yard.</div>
+                            <div class="supply__price">Assorted prices</div>
+                        </div>
                     </div>
                 </div>
             </div>

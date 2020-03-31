@@ -398,14 +398,16 @@ header { min-height: 270px; }
 .supply.two .supply__background-image { background: url('../images/supplies/potting-soil.jpg') 50% 50%/cover no-repeat; }
 .supply.three .supply__background-image { background: url('../images/supplies/garden-clay-pots.jpg') 50% 50%/cover no-repeat; }
 .supply.four .supply__background-image { background: url('../images/supplies/seed-packs.jpg') 50% 50%/cover no-repeat; }
+.supply.five .supply__background-image { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
 
 .supply.zero .supply__zoom-in { background: url('../images/supplies/garden-supplies.jpg') 50% 50%/cover no-repeat; }
 .supply.one .supply__zoom-in { background: url('../images/supplies/two-watering-cans.jpg') 50% 50%/cover no-repeat; }
 .supply.two .supply__zoom-in { background: url('../images/supplies/potting-soil.jpg') 50% 50%/cover no-repeat; }
 .supply.three .supply__zoom-in { background: url('../images/supplies/garden-clay-pots.jpg') 50% 50%/cover no-repeat; }
 .supply.four .supply__zoom-in { background: url('../images/supplies/seed-packs.jpg') 50% 50%/cover no-repeat; }
+.supply.five .supply__zoom-in { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
 
-.supply.four { padding-bottom: 0; }
+.supply.five { padding-bottom: 0; }
 
 
 /*404*/
@@ -467,7 +469,7 @@ header { min-height: 270px; }
     .plant.four, .plant.five, .plant.six { padding-bottom: 0; }
 
     /*Supplies*/
-    .supply.four { padding-bottom: 0; }
+    .supply.four, .supply.five { padding-bottom: 0; }
 
     /*Blog*/
     .blog__image img { display: block; width: auto; height: auto; }
@@ -577,7 +579,7 @@ header { min-height: 270px; }
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
     .supply__zoom-in { width: 370px; height: 240px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
 
-    .supply.three, .supply.four { padding-bottom: 0; }
+    .supply.three, .supply.four, .supply.five { padding-bottom: 0; }
     
     
     /*Blog*/
