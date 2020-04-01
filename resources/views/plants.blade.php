@@ -36,7 +36,7 @@
                                 <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background"></div>
-                            <div class="plant__description">Pretty and small, perfect for an easy house-plant.</div>
+                            <div class="plant__description">Small and compact, perfect for an easy house-plant.</div>
                             <div class="plant__price">$5</div>
                         </div>
                         <div class="plant one col-sma-4">
@@ -47,7 +47,7 @@
                                 <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background"></div>
-                            <div class="plant__description">Time to get an outdoor sapling for your yard or farm.  Assorted Varieties.</div>
+                            <div class="plant__description">Time to get a sapling for your yard or farm.  Assorted Varieties.</div>
                             <div class="plant__price">Typically around $70-$100</div>
                         </div>
                         <div class="plant two col-sma-4">
@@ -80,8 +80,10 @@
                                 <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background"></div>
-                            <div class="plant__description">Time to get an outdoor sapling for your yard or farm.</div>
-                            <div class="plant__price">$30</div>
+                            <div class="plant__description">We sell a wide variety of potted plants!  Depending on the time of year you can find
+                            flowers, mints, strawberries, small bushes, and potted plants.  Great for decorating both the inside and outside of a home, 
+                            apartment, business, and wherever else you can think of!  Plants range in size and price.</div>
+                            <div class="plant__price">$5-30</div>
                         </div>
                         <div class="plant five col-sma-4">
                             <h4 class="plant__title">Grass</h4>
