@@ -235,13 +235,14 @@ header { min-height: 270px; }
 .footer__social-item { display: inline-block; padding: 0 18px; cursor: pointer; }
 .footer__social-link { transition: 0.4s ease-in; }
 .footer .footer__social-item .footer__social-icon::before { display: inline-block; width: 32px; height: 32px; border-radius: 16px; transition: 0.4s ease-in; }
-.footer .footer__social-item .footer__social-icon:hover::before { box-shadow: 0 0 8px 12px rgba(255, 255, 255, 0.8); 
-         background-color: rgba(255, 255, 255, 0.8); color: #71bc78; transition: 0.4s ease-in; }
+.footer .footer__social-item .footer__social-icon:hover::before { box-shadow: 0 0 8px 12px rgba(255, 255, 255, 0.92); 
+         background-color: rgba(255, 255, 255, 0.92); color: #71bc78; transition: 0.4s ease-in; }
 
 
 .main-title-container { position: relative; top: 70px; left: 0px; width: 230px; 
                         margin-left: auto; margin-right: auto; border: 4px solid rgba(79, 121, 66, 0.8); text-align: center; 
-                        background: linear-gradient(170deg, rgba(252, 252, 252, 0.8) 0%, rgba(252, 252, 252, 0.8) 60%, rgba(252, 252, 252, 0.7) 70%, rgba(252, 252, 252, 0.6) 80%, rgba(252, 252, 252, 0.2) 100%);
+                        background: linear-gradient(170deg, rgba(252, 252, 252, 0.8) 0%, rgba(252, 252, 252, 0.8) 60%, 
+                            rgba(252, 252, 252, 0.7) 70%, rgba(252, 252, 252, 0.6) 80%, rgba(252, 252, 252, 0.2) 100%);
                         background-size: 1040px; background-position: 0 0; border-radius: 10px; transition: 0.4s ease-in; cursor: pointer; }
 .main-title-container:hover { border: 4px solid rgba(79, 121, 66, 0.75); transition: 0.4s ease-in; background-position: -520px 0; }					
 .main-title-container__title { display: inline-block; padding: 8px 10px; font-size: 32px; font-family: 'Calibri', sans-serif; font-weight: bold; 
@@ -266,7 +267,8 @@ header { min-height: 270px; }
 .input-container { padding-bottom: 20px; }
 .input-container input, .input-container textarea { width: 100%; padding: 10px 15px; border: 1px solid #000; border-radius: 5px; }
 .form__form-label { display: inline-block; padding-bottom: 10px; font-size: 19px; font-weight: bold; color: #4f7942; }
-.form__submit input { width: 150px; padding: 10px 15px; border-radius: 15px; background-color: #4f7942; color: #f9f9f9; font-weight: bold; cursor: pointer; transition: 0.4s ease-in; }
+.form__submit input { width: 150px; padding: 10px 15px; border-radius: 15px; background-color: #4f7942; color: #f9f9f9; font-weight: bold; cursor: pointer; 
+                     transition: 0.4s ease-in; }
 .form__submit input:hover { background-color: #77874a; color: #000000; transition: 0.4s ease-in; }
 .form__transmit-results { font-size: 18px; font-weight: bold; }
 
