@@ -223,20 +223,20 @@ header { min-height: 270px; }
 
 
 .footer { position: relative; padding-top: 60px; padding-bottom: 60px; text-align: center; }
-.footer__background { position: absolute; top: 0; width: 100%; min-height: 431px; opacity: 0.28;
+.footer__background { position: absolute; top: 0; width: 100%; min-height: 431px; opacity: 0.35;
                       background: url('../images/greenhouse-with-variety-of-plants.jpg') 50% 50%/cover no-repeat; }
-.footer__copyright { width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 40px; font-size: 18px; color: #000000; }
+.footer__copyright { width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 40px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
 .footer__location { width: 90%; padding-bottom: 40px; margin-left: auto; margin-right: auto; }
-.footer__location-header { padding-bottom: 15px; font-size: 20px; font-weight: bold; color: #4f7942; }
-.footer__location-address { padding-bottom: 10px; font-size: 18px; }
-.footer__location-hours { padding-bottom: 10px; font-size: 18px; }
-.footer__phone { font-size: 18px; }
+.footer__location-header { padding-bottom: 15px; font-size: 20px; font-weight: bold; color: rgba(79, 121, 66, 0.92); }
+.footer__location-address { padding-bottom: 10px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
+.footer__location-hours { padding-bottom: 10px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
+.footer__phone { font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92);}
 .footer__social { position: relative; width: 90%; margin-left: auto; margin-right: auto; font-size: 0; }
 .footer__social-item { display: inline-block; padding: 0 18px; cursor: pointer; }
-.footer__social-link { transition: 0.4s ease-in; }
+.footer .footer__social-link { color: rgba(79, 121, 66, 0.92); transition: 0.4s ease-in; }
 .footer .footer__social-item .footer__social-icon::before { display: inline-block; width: 32px; height: 32px; border-radius: 16px; transition: 0.4s ease-in; }
 .footer .footer__social-item .footer__social-icon:hover::before { box-shadow: 0 0 8px 12px rgba(255, 255, 255, 0.92); 
-         background-color: rgba(255, 255, 255, 0.92); color: #71bc78; transition: 0.4s ease-in; }
+         background-color: rgba(255, 255, 255, 0.92); color: rgba(113, 188, 120, 0.92); transition: 0.4s ease-in; }
 
 
 .main-title-container { position: relative; top: 70px; left: 0px; width: 230px; 
@@ -513,7 +513,10 @@ header { min-height: 270px; }
     .footer { }
     .footer__background { min-height: 391px; }
     .footer__location-header { font-size: 24px; }
-
+    .footer__copyright { font-size: 18px; }
+    .footer__location-address { font-size: 18px; }
+    .footer__location-address { font-size: 18px; }
+    .footer__location-hours { font-size: 18px; }
 
     .main-title-container { top: 80px; left: 70px; width: 500px; margin-left: 0; margin-right: 0; }
     .main-title-container__title { position: relative; padding: 12px 10px; font-size: 48px; line-height: 50px; }
