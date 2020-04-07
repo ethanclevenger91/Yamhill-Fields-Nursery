@@ -10,3 +10,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /public/blog/wp-content/uploads/
+/public/blog/wp-content/themes/twentynineteen/
+/public/blog/wp-content/themes/twentyseventeen/
+/public/blog/wp-content/themes/twentysixteen/
+/public/blog/wp-content/themes/twentytwenty/
