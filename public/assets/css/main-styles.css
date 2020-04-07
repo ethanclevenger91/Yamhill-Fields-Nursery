@@ -517,12 +517,12 @@ header { min-height: 270px; }
     .logo { position: absolute; top: 20px; left: auto; right: 20px; width: 104px; height: 104px; }
 
     .footer { }
-    .footer__background { min-height: 391px; }
+    .footer__background { min-height: 393px; }
     .footer__location-header { font-size: 24px; }
-    .footer__copyright { font-size: 18px; }
-    .footer__location-address { font-size: 18px; }
-    .footer__location-address { font-size: 18px; }
-    .footer__location-hours { font-size: 18px; }
+    .footer__copyright { font-size: 19px; }
+    .footer__location-address { font-size: 19px; }
+    .footer__location-address { font-size: 19px; }
+    .footer__location-hours { font-size: 19px; }
 
     .main-title-container { top: 80px; left: 70px; width: 500px; margin-left: 0; margin-right: 0; }
     .main-title-container__title { position: relative; padding: 12px 10px; font-size: 48px; line-height: 50px; }
