@@ -25,7 +25,7 @@
                     <div class="content-row">
                         <div class="col-sma-12">
                             <h3>Supplies for Sale</h3>
-                            <p>Come buy lots of house plants at our fantastic nursery.</p>
+                            <p>Whether it's winter or summer, we have the supplies you need for your gardening projects!</p>
                         </div>
                         <div class="supply zero col-sma-6 col-lar-4">
                             <h4 class="supply__title">Assorted Garden Supplies</h4>

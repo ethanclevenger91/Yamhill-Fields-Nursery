@@ -25,8 +25,8 @@
                     <div class="content-row">
                         <div class="col-sma-12">
                             <h3>Buy Plants Here</h3>
-                            <p>Come buy lots of house plants at our fantastic nursery.</p>
-                            <p>NOTE: Prices and supplies are approximate and are provided as an estimate only.</p>
+                            <p>We offer a wide selection of outdoor and indoor plants for your gardening and landscaping needs.</p>
+                            <p><strong><em>Note: Prices and supplies are approximate and are provided as an estimate only.</em></strong></p>
                         </div>
                         <div class="plant zero col-sma-4">
                             <h4 class="plant__title">Desert Cacti</h4>

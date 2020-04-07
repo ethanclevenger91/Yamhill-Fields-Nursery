@@ -25,7 +25,7 @@
                     <div class="content-row">
                         <div class="form contact-form col-sma-12 col-lar-6">
                             <h3>Contact Us</h3>
-                            <p>Come buy lots of quality plants at our fantastic nursery!</p>
+                            <p>We look forward to hearing from you.</p>
                             <p>Thank you <strong>@{{writeResponse}}</strong> for writing us!</p>
                             <?php
                             echo Form::open(array('id' => "contactForm", 'url' => '/contact-us-form-validation', 'onsubmit' => 'return validateContactForm();'));
