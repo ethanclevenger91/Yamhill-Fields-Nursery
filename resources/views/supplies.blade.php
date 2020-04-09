@@ -25,7 +25,8 @@
                     <div class="content-row">
                         <div class="col-sma-12">
                             <h3>Supplies for Sale</h3>
-                            <p>Whether it's winter or summer, we have the supplies you need for your gardening projects!</p>
+                            <p>Whether it's winter or summer, we have the supplies you need for your gardening projects!  <strong><em>Note: Prices and 
+                                supplies are approximate and are provided as an estimate only.</em></strong></p>
                         </div>
                         <div class="supply zero col-sma-6 col-lar-4">
                             <h4 class="supply__title">Assorted Garden Supplies</h4>
@@ -86,6 +87,17 @@
                             <div class="supply__price">Assorted prices</div>
                         </div>
                         <div class="supply five col-sma-6 col-lar-4">
+                            <h4 class="supply__title">Handy leaf rake</h4>
+                            <div class="supply__background-image"></div>
+                            <div class="supply__zoom-in-container-close">X</div>
+                            <div class="supply__zoom-in-container">
+                                <div class="supply__zoom-in"></div>
+                            </div>
+                            <div class="supply__inspect-background"></div>
+                            <div class="supply__description">Just what you need for when all the leaves come down in the fall!</div>
+                            <div class="supply__price">$16</div>
+                        </div>
+                        <div class="supply six col-sma-6 col-lar-4">
                             <h4 class="supply__title">Garden Hose</h4>
                             <div class="supply__background-image"></div>
                             <div class="supply__zoom-in-container-close">X</div>

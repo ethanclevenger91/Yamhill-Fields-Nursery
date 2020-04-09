@@ -1,5 +1,7 @@
 
-for (let i = 0; i < 6; i++) {
+let numberOfSupplies = 7;
+
+for (let i = 0; i < numberOfSupplies; i++) {
     let supplyInspectBackground = document.getElementsByClassName("supply__inspect-background")[i];
     
     let itemImage = document.getElementsByClassName("supply__background-image")[i];
@@ -28,7 +30,7 @@ window.addEventListener("resize", checkBrowserWidth);
 
 
 function checkBrowserWidth() {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < numberOfSupplies; i++) {
         if (window.innerWidth >= 1200) {
             if (document.getElementsByClassName("supply__inspect-background")[i].classList.contains("show") === false) {
                 document.getElementsByClassName("supply__inspect-background")[i].classList.add("show");
@@ -45,7 +47,7 @@ function checkBrowserWidth() {
 }
 
 function toggleExamine(event, supplyNumber) {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < numberOfSupplies; i++) {
         if(i !== supplyNumber){
             document.getElementsByClassName("supply__zoom-in-container")[i].classList.remove("inspect");
             document.getElementsByClassName("supply__zoom-in-container-close")[i].classList.remove("inspect");

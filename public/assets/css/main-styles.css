@@ -405,16 +405,18 @@ header { min-height: 270px; }
 .supply.two .supply__background-image { background: url('../images/supplies/potting-soil.jpg') 50% 50%/cover no-repeat; }
 .supply.three .supply__background-image { background: url('../images/supplies/garden-clay-pots.jpg') 50% 50%/cover no-repeat; }
 .supply.four .supply__background-image { background: url('../images/supplies/seed-packs.jpg') 50% 50%/cover no-repeat; }
-.supply.five .supply__background-image { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
+.supply.five .supply__background-image { background: url('../images/supplies/rake.jpg') 50% 50%/cover no-repeat; }
+.supply.six .supply__background-image { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
 
 .supply.zero .supply__zoom-in { background: url('../images/supplies/garden-supplies.jpg') 50% 50%/cover no-repeat; }
 .supply.one .supply__zoom-in { background: url('../images/supplies/two-watering-cans.jpg') 50% 50%/cover no-repeat; }
 .supply.two .supply__zoom-in { background: url('../images/supplies/potting-soil.jpg') 50% 50%/cover no-repeat; }
 .supply.three .supply__zoom-in { background: url('../images/supplies/garden-clay-pots.jpg') 50% 50%/cover no-repeat; }
 .supply.four .supply__zoom-in { background: url('../images/supplies/seed-packs.jpg') 50% 50%/cover no-repeat; }
-.supply.five .supply__zoom-in { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
+.supply.five .supply__zoom-in { background: url('../images/supplies/rake.jpg') 50% 50%/cover no-repeat; }
+.supply.six .supply__zoom-in { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
 
-.supply.five { padding-bottom: 0; }
+.supply.six { padding-bottom: 0; }
 
 
 /*404*/
@@ -480,7 +482,7 @@ header { min-height: 270px; }
     .plant.four, .plant.five, .plant.six { padding-bottom: 0; }
 
     /*Supplies*/
-    .supply.four, .supply.five { padding-bottom: 0; }
+    .supply.six { padding-bottom: 0; }
 
     /*Blog*/
     .blog__image img { display: block; width: auto; height: auto; }
@@ -585,7 +587,7 @@ header { min-height: 270px; }
     
     .supply__inspect-background.show { display: inline-block; float: left; width: 18px; height: 28px; margin-right: 10px; margin-bottom: 5px;
                                        background: url('../images/magnifying-glass.png') 50% 50%/cover no-repeat; cursor: pointer; }
-    .supply__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 292px; padding-left: 10px; padding-right: 10px; 
+    .supply__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 290px; padding: 2px 12px 2px 12px; 
                                                border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
                                                transition: 0.4s ease-in; cursor: pointer; }
     .supply__zoom-in-container-close.inspect:hover { background-color: #4f7942; transition: 0.4s ease-in; }
@@ -593,7 +595,7 @@ header { min-height: 270px; }
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
     .supply__zoom-in { width: 370px; height: 240px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
 
-    .supply.three, .supply.four, .supply.five { padding-bottom: 0; }
+    .supply.six { padding-bottom: 0; }
     
     
     /*Blog*/
@@ -602,8 +604,6 @@ header { min-height: 270px; }
 }
 
 @media only screen and (min-width: 1600px){
-
-
 
 }
 

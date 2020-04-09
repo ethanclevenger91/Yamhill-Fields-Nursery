@@ -25,8 +25,8 @@
                     <div class="content-row">
                         <div class="col-sma-12">
                             <h3>Buy Plants Here</h3>
-                            <p>We offer a wide selection of outdoor and indoor plants for your gardening and landscaping needs.</p>
-                            <p><strong><em>Note: Prices and supplies are approximate and are provided as an estimate only.</em></strong></p>
+                            <p>We offer a wide selection of outdoor and indoor plants for your gardening and landscaping needs.  <strong><em>Note: Prices and
+                                supplies are approximate and are provided as an estimate only.</em></strong></p>
                         </div>
                         <div class="plant zero col-sma-4">
                             <h4 class="plant__title">Desert Cacti</h4>
@@ -48,7 +48,7 @@
                                 <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background"></div>
-                                <div class="plant__notes">Outdoor.  Shade/Partial Sun/Full Sun.</div>
+                            <div class="plant__notes">Outdoor.  Shade/Partial Sun/Full Sun.</div>
                             <div class="plant__description">Time to get a sapling for your yard or farm.  Assorted Varieties.</div>
                             <div class="plant__price">Typically around $70-$100</div>
                         </div>
@@ -84,10 +84,10 @@
                                 <div class="plant__zoom-in"></div>
                             </div>
                             <div class="plant__inspect-background"></div>
-                                 <div class="plant__notes">Indoor and outdoor.</div>
+                            <div class="plant__notes">Indoor and outdoor.</div>
                             <div class="plant__description">We sell a wide variety of potted plants!  Depending on the time of year you can find
-                            flowers, mints, strawberries, small bushes, and potted plants.  Great for decorating both the inside and outside of a home, 
-                            apartment, business, and wherever else you can think of!  Plants range in size and price.</div>
+                                flowers, mints, strawberries, small bushes, and potted plants.  Great for decorating both the inside and outside of a home, 
+                                apartment, business, and wherever else you can think of!  Plants range in size and price.</div>
                             <div class="plant__price">$5-30</div>
                         </div>
                         <div class="plant five col-sma-4">

@@ -1,5 +1,7 @@
 
-for (let i = 0; i < 6; i++) {
+let numberOfPlants = 6;
+
+for (let i = 0; i < numberOfPlants; i++) {
     let plantInspectBackground = document.getElementsByClassName("plant__inspect-background")[i];
 
     let itemImage = document.getElementsByClassName("plant__background-image")[i];
@@ -29,7 +31,7 @@ window.addEventListener("resize", checkBrowserWidth);
 
 
 function checkBrowserWidth() {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < numberOfPlants; i++) {
         if (window.innerWidth >= 1200) {
             if (document.getElementsByClassName("plant__inspect-background")[i].classList.contains("show") === false) {
                 document.getElementsByClassName("plant__inspect-background")[i].classList.add("show");
@@ -46,7 +48,7 @@ function checkBrowserWidth() {
 }
 
 function toggleExamine(event, plantNumber) {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < numberOfPlants; i++) {
         if(i !== plantNumber){
             document.getElementsByClassName("plant__zoom-in-container")[i].classList.remove("inspect");
             document.getElementsByClassName("plant__zoom-in-container-close")[i].classList.remove("inspect");
