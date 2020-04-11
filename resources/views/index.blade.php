@@ -26,6 +26,7 @@
                     <div class="content-row">
                         <div class="col-sma-7">
                             <div class="slideshow">
+                                <div class="slideshow__default-background"></div>
                                 <div class="slideshow__image">
                                     <a href="/" aria-label="" class="slideshow__image__link">
                                         <div class="slideshow__slide-background"></div>

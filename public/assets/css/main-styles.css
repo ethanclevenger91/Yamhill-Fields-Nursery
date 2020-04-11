@@ -292,10 +292,11 @@ header { min-height: 270px; }
 
 
 .slideshow { position: relative; width: 100%; max-width: 670px; padding-bottom: 20px; margin-left: auto; margin-right: auto; background-color: #ffffff; }
-.slideshow__image { height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
-.slideshow__image__link { display: block; width: 100%; height: 220px; padding-bottom: 56.25%; }
-.slideshow__slide-background { position: absolute; top: 0; left: 0; opacity: 0;  width: 100%; height: 220px; padding-bottom: 56.25%; 
-                               background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(50, 91, 83, 0.4)); transition: 0.5s ease-in; }
+.slideshow__default-background { position: absolute; top: 0; left: 0; opacity: 1;  width: 100%; height: 220px; background-color: #e9e9e9; }
+.slideshow__image { position: relative; height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
+.slideshow__image__link { display: block; width: 100%; height: 220px; }
+.slideshow__slide-background { position: absolute; top: 0; left: 0; opacity: 0;  width: 100%; height: 220px;
+                               background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(50, 91, 83, 0.4)); transition: 0.5s ease-in; }
 .slideshow__image:hover .slideshow__slide-background { opacity: 1; transition: 0.5s ease-in; }
 .slideshow__slide-description { position: relative; top: 182px; padding-left: 10px; padding-right: 20px; text-align: right; font-size: 22px; 
                                 font-weight: bold; color: #ffffff; text-shadow: 0.8px 1.2px #333333; }
@@ -470,6 +471,7 @@ header { min-height: 270px; }
 
     /*Index*/
     .slideshow { padding-bottom: 0; }
+    .slideshow__default-background { height: 260px; }
     .slideshow__image { height: 260px; }
     .slideshow__image__link { height: 260px; }
     .slideshow__slide-background { height: 260px; }
@@ -545,7 +547,10 @@ header { min-height: 270px; }
     .index-content-image { height: 400px; }
     
     .slideshow { position: relative; width: 670px; margin-left: auto; margin-right: 0px; }
-    .slideshow__image { position: relative; padding-bottom: 56.25%; }
+    .slideshow__default-background { padding-bottom: 56.25%; }
+    .slideshow__image { padding-bottom: 56.25%; }
+    .slideshow__image__link { padding-bottom: 56.25%; }
+    .slideshow__slide-background { padding-bottom: 56.25%; }
     .slideshow__slide-description { top: 332px; padding-left: 20px; padding-right: 60px; font-size: 28px; }
     
     .slideshow__icon { width: 36px; height: 36px; }
