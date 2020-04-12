@@ -1,4 +1,5 @@
 <div class="main-title-container">
+    <div class="main-title-container__background"></div>
     <h1>
         <a class="main-title-container__title" href="/index">Yamhill Fields Nursery</a>
     </h1>
