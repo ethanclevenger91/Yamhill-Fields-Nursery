@@ -207,8 +207,8 @@ header { min-height: 270px; }
 .nav__nav-list { }
 .nav__nav-item { padding-bottom: 25px; text-align: center; }
 .nav__nav-item:last-of-type { padding-bottom: 0; }
-.nav .nav__nav-link { font-size: 18px; color: #000000; }
-.nav .nav__nav-link:hover { text-decoration: underline; color: #ffffff; }
+.nav .nav__nav-link { font-size: 18px; color: #000000; transition: 0.2s ease-in; }
+.nav .nav__nav-link:hover { text-decoration: underline; color: #ffffff; transition: 0.2s ease-in; }
 
 #dropdownContent { padding: 0; background: none; transition: 0.8s all ease-in; }    
 #dropdownContent .nav__nav-item { display: block; height: 0; padding-bottom: 0px; opacity: 0; transition: 0.8s all ease-in; }
