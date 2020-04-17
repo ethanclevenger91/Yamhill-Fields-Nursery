@@ -11,13 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-/*Added By Logan */
-
 Route::get('/', function(){
 	return view('index');
 });
@@ -25,7 +18,6 @@ Route::get('/', function(){
 Route::get('/index', function(){
 	return view('index');
 });
-
 
 
 /*Subpages*/
@@ -73,19 +65,3 @@ Route::get('sendbasicemail', 'MailController@simple_email');
 Route::get('404',['as'=>'404','uses'=>'ErrorHandlingController@errorCode404']);
 Route::get('405',['as'=>'405','uses'=>'ErrorHandlingController@errorCode405']);
 Route::get('500',['as'=>'500','uses'=>'ErrorHandlingController@errorCode500']);
-
-
-
-
-
-
-
-
-
-
-/*Testing form*/
-/*
-Route::get('/form',function() {
-   return view('form');
-});
-*/

@@ -2,6 +2,7 @@
 let currentSlide;
 let slideshowCounter = 0;
 let paused = false;
+let updateSlideSettings = true;
 let currentSlideNumber = 0;
 const maxSlideNumber = 3;
 let pausePlayButton;
@@ -72,6 +73,7 @@ function runSlideShow() {
     if (paused === false) {
         if (slideshowCounter === 0) {
             currentSlide.style.opacity = 0;
+            updateSlideSettings = true;
         }
         if (slideshowCounter < 100) {
             currentSlide.style.opacity = parseFloat(currentSlide.style.opacity) + 0.01;
@@ -94,42 +96,45 @@ function runSlideShow() {
             currentSlideNumber = 0;
         }
         
-        if (currentSlideNumber === 0) {
-            currentSlide.style.backgroundImage = "url(" + slide0.src + ")";
-            slideButton0.classList.add('currentSlideButton');
-            slideButton1.classList.remove('currentSlideButton');
-            slideButton2.classList.remove('currentSlideButton');
-            slideButton3.classList.remove('currentSlideButton');
-            currentSlideImageLink.href = "/plants";
-            currentSlideImageLink.setAttribute("aria-label", "Plants");
-            currentSlideDescription.innerHTML = "View from the nursery...";
-        } else if (currentSlideNumber === 1) {
-            currentSlide.style.backgroundImage = "url(" + slide1.src + ")";
-            slideButton0.classList.remove('currentSlideButton');
-            slideButton1.classList.add('currentSlideButton');
-            slideButton2.classList.remove('currentSlideButton');
-            slideButton3.classList.remove('currentSlideButton');
-            currentSlideImageLink.href = "/about-us";
-            currentSlideImageLink.setAttribute("aria-label", "About Us");
-            currentSlideDescription.innerHTML = "Rows and rows of plants!";
-        } else if (currentSlideNumber === 2) {
-            currentSlide.style.backgroundImage = "url(" + slide2.src + ")";
-            slideButton0.classList.remove('currentSlideButton');
-            slideButton1.classList.remove('currentSlideButton');
-            slideButton2.classList.add('currentSlideButton');
-            slideButton3.classList.remove('currentSlideButton');
-            currentSlideImageLink.href = "/plants";
-            currentSlideImageLink.setAttribute("aria-label", "Plants");
-            currentSlideDescription.innerHTML = "Green grass for yards!";
-        } else if (currentSlideNumber === 3) {
-            currentSlide.style.backgroundImage = "url(" + slide3.src + ")";
-            slideButton0.classList.remove('currentSlideButton');
-            slideButton1.classList.remove('currentSlideButton');
-            slideButton2.classList.remove('currentSlideButton');
-            slideButton3.classList.add('currentSlideButton');
-            currentSlideImageLink.href = "/supplies";
-            currentSlideImageLink.setAttribute("aria-label", "Supplies");
-            currentSlideDescription.innerHTML = "Wide variety of seeds";
+        if (updateSlideSettings) {
+            updateSlideSettings = false;
+            if (currentSlideNumber === 0) {
+                currentSlide.style.backgroundImage = "url(" + slide0.src + ")";
+                slideButton0.classList.add('currentSlideButton');
+                slideButton1.classList.remove('currentSlideButton');
+                slideButton2.classList.remove('currentSlideButton');
+                slideButton3.classList.remove('currentSlideButton');
+                currentSlideImageLink.href = "/plants";
+                currentSlideImageLink.setAttribute("aria-label", "Plants");
+                currentSlideDescription.innerHTML = "View from the nursery...";
+            } else if (currentSlideNumber === 1) {
+                currentSlide.style.backgroundImage = "url(" + slide1.src + ")";
+                slideButton0.classList.remove('currentSlideButton');
+                slideButton1.classList.add('currentSlideButton');
+                slideButton2.classList.remove('currentSlideButton');
+                slideButton3.classList.remove('currentSlideButton');
+                currentSlideImageLink.href = "/about-us";
+                currentSlideImageLink.setAttribute("aria-label", "About Us");
+                currentSlideDescription.innerHTML = "Rows and rows of plants!";
+            } else if (currentSlideNumber === 2) {
+                currentSlide.style.backgroundImage = "url(" + slide2.src + ")";
+                slideButton0.classList.remove('currentSlideButton');
+                slideButton1.classList.remove('currentSlideButton');
+                slideButton2.classList.add('currentSlideButton');
+                slideButton3.classList.remove('currentSlideButton');
+                currentSlideImageLink.href = "/plants";
+                currentSlideImageLink.setAttribute("aria-label", "Plants");
+                currentSlideDescription.innerHTML = "Green grass for yards";
+            } else if (currentSlideNumber === 3) {
+                currentSlide.style.backgroundImage = "url(" + slide3.src + ")";
+                slideButton0.classList.remove('currentSlideButton');
+                slideButton1.classList.remove('currentSlideButton');
+                slideButton2.classList.remove('currentSlideButton');
+                slideButton3.classList.add('currentSlideButton');
+                currentSlideImageLink.href = "/supplies";
+                currentSlideImageLink.setAttribute("aria-label", "Supplies");
+                currentSlideDescription.innerHTML = "Wide variety of seeds";
+            }
         }
         slideshowCounter++;
     }
@@ -146,4 +151,5 @@ function setSlide(slideNumber) {
     slideshowCounter = 50;
     currentSlideNumber = slideNumber;
     paused = false;
+    updateSlideSettings = true;
 }
