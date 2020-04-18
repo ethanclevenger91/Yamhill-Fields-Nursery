@@ -68,7 +68,6 @@ function runSlideShow() {
     if (paused === false) {
         if (slideshowCounter === 0) {
             currentSlide.style.opacity = 0;
-            updateSlideSettings = true;
         }
         if (slideshowCounter < 100) {
             currentSlide.style.opacity = parseFloat(currentSlide.style.opacity) + 0.01;
@@ -81,6 +80,7 @@ function runSlideShow() {
         }
         if (slideshowCounter >= 700) {
             slideshowCounter = 0;
+            updateSlideSettings = true;
             currentSlide.style.opacity = 0;
             currentSlideNumber++;
         }
@@ -90,7 +90,7 @@ function runSlideShow() {
         } else if (currentSlideNumber > maxSlideNumber) {
             currentSlideNumber = 0;
         }
-        
+      
         if (updateSlideSettings) {
             updateSlideSettings = false;
             if (currentSlideNumber === 0) {
@@ -151,5 +151,6 @@ function setSlide(slideNumber) {
     slideshowCounter = 50;
     currentSlideNumber = slideNumber;
     paused = false;
+    pausePlayButton.classList.remove("paused");
     updateSlideSettings = true;
 }
