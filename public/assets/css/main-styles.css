@@ -389,6 +389,7 @@ header { min-height: 270px; }
 .plant.three .plant__background-image { background: url('../images/plants/blueberry-bush.jpg') 50% 50%/cover no-repeat; }
 .plant.four .plant__background-image { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
 .plant.five .plant__background-image { background: url('../images/plants/grasses-up-close.jpg') 50% 50%/cover no-repeat; }
+.plant.six .plant__background-image { background: url('../images/plants/strawberry-bush.jpg') 50% 50%/cover no-repeat; }
 
 .plant.zero .plant__zoom-in { background: url('../images/plants/cactus-bigger-width.jpg') 91px 73px/cover no-repeat; }
 .plant.one .plant__zoom-in { background: url('../images/plants/trees-outside-nursery.jpg') 91px 73px/cover no-repeat; }
@@ -396,6 +397,7 @@ header { min-height: 270px; }
 .plant.three .plant__zoom-in { background: url('../images/plants/blueberry-bush.jpg') 91px 73px/cover no-repeat; }
 .plant.four .plant__zoom-in { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 91px 73px/cover no-repeat; }
 .plant.five .plant__zoom-in { background: url('../images/plants/grasses-up-close.jpg') 91px 73px/cover no-repeat; }
+.plant.six .plant__zoom-in { background: url('../images/plants/strawberry-bush.jpg') 91px 73px/cover no-repeat; }
 
 .plant.six { padding-bottom: 0; }
 
@@ -491,7 +493,7 @@ header { min-height: 270px; }
     
     
     /*Plants*/
-    .plant.four, .plant.five, .plant.six { padding-bottom: 0; }
+    .plant.six { padding-bottom: 0; }
 
     /*Supplies*/
     .supply.six { padding-bottom: 0; }

@@ -103,6 +103,19 @@
                                 to a garden or yard.</div>
                             <div class="plant__price">$4</div>
                         </div>
+                        <div class="plant six col-sma-4">
+                            <h4 class="plant__title">Strawberry Bush (small)</h4>
+                            <div class="plant__background-image"></div>
+                            <div class="plant__zoom-in-container-close">X</div>
+                            <div class="plant__zoom-in-container">
+                                <div class="plant__zoom-in"></div>
+                            </div>
+                            <div class="plant__inspect-background"></div>
+                            <div class="plant__notes">Primarily Outdoor.  Mostly Sunny or Full Sun.</div>
+                            <div class="plant__description">Pick up some strawberry plants and grow your own! They make a great snack or treat in the home 
+                                garden. Provide adequate water when watering and be sure to avoid watering the leaves.</div>
+                            <div class="plant__price">$5</div>
+                        </div>
                     </div>
                 </div>
             </div>

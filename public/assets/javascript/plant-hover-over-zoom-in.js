@@ -1,5 +1,5 @@
 
-let numberOfPlants = 6;
+let numberOfPlants = 7;
 
 for (let i = 0; i < numberOfPlants; i++) {
     let plantInspectBackground = document.getElementsByClassName("plant__inspect-background")[i];
