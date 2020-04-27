@@ -58,9 +58,6 @@ Route::post('/contact-us', function(){
 Route::get('/contact-us-form-validation', 'ContactUsValidationController@displayContactForm');
 Route::post('/contact-us-form-validation', 'ContactUsValidationController@validateform');
 
-/* Sending email (from contact form) (not working yet)*/
-Route::get('sendbasicemail', 'MailController@simple_email');
-
 /*404 error handling*/
 Route::get('404',['as'=>'404','uses'=>'ErrorHandlingController@errorCode404']);
 Route::get('405',['as'=>'405','uses'=>'ErrorHandlingController@errorCode405']);
