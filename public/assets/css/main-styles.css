@@ -277,7 +277,7 @@ header { min-height: 270px; }
 .form__form-label { display: inline-block; padding-bottom: 10px; font-size: 19px; font-weight: bold; color: #4f7942; }
 .form__submit input { width: 150px; padding: 10px 15px; border-radius: 15px; background-color: #4f7942; color: #f9f9f9; font-weight: bold; cursor: pointer; 
                      transition: 0.4s ease-in; }
-.form__submit input:hover { background-color: #77874a; color: #000000; transition: 0.4s ease-in; }
+.form__submit input:hover { background-color: #71bc78; transition: 0.4s ease-in; }
 .form__transmit-results { font-size: 18px; font-weight: bold; }
 
 .validation__results { padding-bottom: 5px; font-weight: bold; }
