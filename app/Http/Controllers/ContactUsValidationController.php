@@ -30,13 +30,18 @@ class ContactUsValidationController extends Controller {
 
         /* Create the e-mail body. */
         $Body = "";
-        $Body .= "<strong>User Name:</strong> " . $UserName . "\n";
-        $Body .= "<strong>User Email:</strong> " . $UserEmail . "\n";
-        $Body .= "<strong>Subject:</strong> " . $UserSubject . "\n";
-        $Body .= "<strong>User Comments:</strong> " . $UserComments . "\n";
+        $Body .= "<strong>User Name:</strong> " . $UserName . "<br />";
+        $Body .= "<strong>User Email:</strong> " . $UserEmail . "<br />";
+        $Body .= "<strong>Subject:</strong> " . $UserSubject . "<br />";
+        $Body .= "<strong>User Comments:</strong> " . $UserComments . "<br />";
+        
+        $Headers = "";
+        $Headers .= "From: <$UserEmail>\r\n";
+        $Headers .= "MIME-Version: 1.0\r\n";
+        $Headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
         /* Send the e-mail. */
-        $SuccessfulSubmission = mail($SendEmailTo, "Yamhill Fields Nursery: " . $UserSubject, $Body, "From: <$UserEmail>");
+        $SuccessfulSubmission = mail($SendEmailTo, "Yamhill Fields Nursery: " . $UserSubject, $Body, $Headers);
         if ($SuccessfulSubmission) {
             return redirect()->back()->with('submitResults', 'Thank you ' . $_POST['userName'] . ' for contacting us!');
         } else if ($SuccessfulSubmission === false) {
