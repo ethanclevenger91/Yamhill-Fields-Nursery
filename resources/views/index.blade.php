@@ -26,7 +26,6 @@
                     <div class="content-row">
                         <div class="col-sma-7">
                             <div class="slideshow">
-                                <div class="slideshow__default-background"></div>
                                 <div class="slideshow__image">
                                     <a href="/" aria-label="" class="slideshow__image__link">
                                         <div class="slideshow__slide-background"></div>
@@ -61,8 +60,9 @@
                             <p class="content__highlighted-phrase"><strong>Get all your gardening and landscaping plants and supplies in one stop!</strong></p>
                             <p>We sell grass, shrubs, house plants, saplings, and more!</p>
                             <p>We sell gardening and landscaping tools!</p>
-                            <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday. Questions: call us at 503-538-8204.</p>
-                            <p>Located near Portland in the Willamette Valley in Dundee.</p>
+                            <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</p>
+                            <p>Questions: call us at 503-538-8204.</p>
+                            <p>We are in Dundee near Portland in the Willamette Valley!</p>
                         </div>
                     </div>
                     <div class="content-row">
