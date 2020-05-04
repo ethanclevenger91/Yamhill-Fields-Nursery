@@ -25,8 +25,8 @@ declare(strict_types = 1);
                 </div>
             </header>
             @include('includes.nav')
-            <div class="content">
-                <div class="inner-wrapper">
+            <div class="inner-wrapper">
+                <div class="content">
                     <div class="content-row">
                         <div class="col-sma-12">
                             <h3>Our Blog</h3>                 

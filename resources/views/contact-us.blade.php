@@ -20,8 +20,8 @@
                 </div>
             </header>
             @include('includes.nav')
-            <div class="content">    
-                <div class="inner-wrapper">
+            <div class="inner-wrapper">    
+                <div class="content">
                     <div class="content-row">
                         <div class="form contact-form col-sma-12 col-lar-6">
                             <h3>Contact Us</h3>

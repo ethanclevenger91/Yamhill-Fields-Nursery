@@ -20,8 +20,8 @@
                 </div>
             </header>
             @include('includes.nav')
-            <div class="content">
-                <div class="inner-wrapper">
+            <div class="inner-wrapper">
+                <div class="content">
                     <div class="content-row">
                         <div class="col-sma-5">
                             <h3>404 Error-Page Not Found</h3>
