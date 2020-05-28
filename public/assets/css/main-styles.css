@@ -556,7 +556,7 @@ header { min-height: 270px; }
     /*Index page */
     .index-content-image { height: 400px; }
     
-    .slideshow { position: relative; width: 670px; margin-left: auto; margin-right: 0px; }
+    .slideshow { position: relative; margin-left: auto; margin-right: 0px; }
     .slideshow__image { padding-bottom: 56.25%; }
     .slideshow__image__link { padding-bottom: 56.25%; }
     .slideshow__slide-background { padding-bottom: 56.25%; }
