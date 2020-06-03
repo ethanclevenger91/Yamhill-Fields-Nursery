@@ -560,7 +560,7 @@ header { min-height: 270px; }
     .slideshow__image { padding-bottom: 56.25%; }
     .slideshow__image__link { padding-bottom: 56.25%; }
     .slideshow__slide-background { padding-bottom: 56.25%; }
-    .slideshow__slide-description { top: 332px; padding-left: 20px; padding-right: 60px; font-size: 28px; }
+    .slideshow__slide-description { top: 324px; padding-left: 20px; padding-right: 60px; font-size: 28px; }
     
     .slideshow__icon { width: 36px; height: 36px; }
     .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }
