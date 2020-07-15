@@ -33,9 +33,9 @@ declare(strict_types = 1);
                             <div class="blog-posts" id="blogPosts">
                                 <?php
                                 global $post;
-                                $args = array('posts_per_page' => 1000);
-                                $postsToDisplay = get_posts($args);
-                                foreach ($postsToDisplay as $post) : setup_postdata($post);
+                                $args = array('posts_per_page' => -1);
+                                $postsToDisplay = new WP_Query($args);
+                                if($postsToDisplay->have_posts()): while($postsToDisplay->have_posts()): the_post();
                                     ?>                                                       
                                     <div class="blog-post" id="<?php the_title(); ?>">
                                         <h4 class="blog-post__title"><?php the_title(); ?></h4>
@@ -64,7 +64,7 @@ declare(strict_types = 1);
                                         <div class="blog__content"><?php the_content(); ?></div>
                                         <div class="clear-both"></div>
                                     </div>
-                                <?php endforeach; ?>
+                                <?php endwhile; endif; ?>
                             </div>               
                         </div>
                     </div>
